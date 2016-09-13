@@ -93,18 +93,41 @@ def depthFirstSearch(problem):
 
 
 def graph_search(problem, fringe):
+    # print "Start:", problem.getStartState()
+    # print "Is the start a goal?", problem.isGoalState(problem.getStartState())
+    # print "Start's successors:", problem.getSuccessors(problem.getStartState())
     explored_points = []
-    fringe.push((problem.getStartState(), 'Start', 0))
+    # Tuple format: ( xy-position, directional string, weight )
+    fringe.push([(problem.getStartState(), "Start", 0)])
+    # Need to store a list of pathways from the start position to the next node to explore.
     while not fringe.isEmpty():
         path = fringe.pop()
+        # Get the next position to evaluate
+        position = path[len(path) - 1][0]
+        # Get the next position of the pathway
+        # print "Current Position: " + str(position)
+        if problem.isGoalState(position):
+            # print "Final Path", [x[1] for x in path][1:]
+            return [x[1] for x in path][1:]
 
+        if position not in explored_points:
+            explored_points.append(position)
+
+            for successor in problem.getSuccessors(position):
+                if successor[0] not in explored_points:
+                    successive_pathway = path[:]
+                    # need to make a copy of the path list
+                    successive_pathway.append(successor)
+                    # Append the successor on the path then push into the structure
+                    fringe.push(successive_pathway)
+                    # push each path possibility on the stack
     return []
 
 
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    fringe = util.PriorityQueueWithFunction(len)
+    return graph_search(problem, fringe)
 
 
 def uniformCostSearch(problem):

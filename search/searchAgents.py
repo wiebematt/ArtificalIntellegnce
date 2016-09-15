@@ -297,7 +297,6 @@ class CornersProblem(search.SearchProblem):
         self._expanded = 0  # DO NOT CHANGE; Number of search nodes expanded
         # Please add any code here which you would like to use
         # in initializing the problem
-        "*** YOUR CODE HERE ***"
 
     def getStartState(self):
         """
@@ -310,8 +309,8 @@ class CornersProblem(search.SearchProblem):
         """
         Returns whether this search state is a goal state of the problem.
         """
-        print state
-        return len(state[1]) == 0
+        # check whether the list of corners is empty using implicit booleanness
+        return not state[1]
 
     def getSuccessors(self, state):
         """
@@ -328,12 +327,20 @@ class CornersProblem(search.SearchProblem):
         for action in [Directions.NORTH, Directions.SOUTH, Directions.EAST, Directions.WEST]:
             # Add a successor state to the successor list if the action is legal
             # Here's a code snippet for figuring out whether a new position hits a wall:
-            #   x,y = currentPosition
-            #   dx, dy = Actions.directionToVector(action)
-            #   nextx, nexty = int(x + dx), int(y + dy)
-            #   hitsWall = self.walls[nextx][nexty]
-
-            "*** YOUR CODE HERE ***"
+            x, y = state[0]
+            dx, dy = Actions.directionToVector(action)
+            nextx, nexty = int(x + dx), int(y + dy)
+            hitsWall = self.walls[nextx][nexty]
+            if not hitsWall:
+                # check if this direction would hit a wall (invalid)
+                next_position = nextx, nexty
+                corners_left = state[1][:]
+                if next_position in corners_left:
+                    # if this new state would eat a corner we need to remove the corner from the list
+                    corners_left.remove(next_position)
+                next_state = next_position, corners_left
+                successors.append((next_state, action, 1))
+        # 1 is used here since the step cost is always one
 
         self._expanded += 1  # DO NOT CHANGE
         return successors
@@ -343,12 +350,14 @@ class CornersProblem(search.SearchProblem):
         Returns the cost of a particular sequence of actions.  If those actions
         include an illegal move, return 999999.  This is implemented for you.
         """
-        if actions == None: return 999999
+        if actions is None:
+            return 999999
         x, y = self.startingPosition
         for action in actions:
             dx, dy = Actions.directionToVector(action)
             x, y = int(x + dx), int(y + dy)
-            if self.walls[x][y]: return 999999
+            if self.walls[x][y]:
+                return 999999
         return len(actions)
 
 

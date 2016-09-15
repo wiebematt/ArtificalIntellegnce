@@ -93,12 +93,14 @@ def depthFirstSearch(problem):
 
 
 def graph_search(problem, fringe):
+    """ Generic Graph search algorithm. Fringe is the data structure of choice."""
     # print "Start:", problem.getStartState()
     # print "Is the start a goal?", problem.isGoalState(problem.getStartState())
     # print "Start's successors:", problem.getSuccessors(problem.getStartState())
     explored_points = []
     # Tuple format: ( xy-position, directional string, weight )
-    fringe.push([(problem.getStartState(), "Stop", 0)])
+    from game import Directions
+    fringe.push([(problem.getStartState(), Directions.STOP, 0)])
     # Need to store a list of pathways from the start position to the next node to explore.
     while not fringe.isEmpty():
         path = fringe.pop()

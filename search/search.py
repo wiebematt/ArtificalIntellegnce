@@ -98,7 +98,7 @@ def graph_search(problem, fringe):
     # print "Start's successors:", problem.getSuccessors(problem.getStartState())
     explored_points = []
     # Tuple format: ( xy-position, directional string, weight )
-    fringe.push([(problem.getStartState(), "Start", 0)])
+    fringe.push([(problem.getStartState(), "Stop", 0)])
     # Need to store a list of pathways from the start position to the next node to explore.
     while not fringe.isEmpty():
         path = fringe.pop()
@@ -132,8 +132,8 @@ def breadthFirstSearch(problem):
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    fringe = util.PriorityQueueWithFunction(lambda path: problem.getCostOfActions([x[1] for x in path]))
+    return graph_search(problem, fringe)
 
 
 def nullHeuristic(state, problem=None):
@@ -146,8 +146,9 @@ def nullHeuristic(state, problem=None):
 
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    fringe = util.PriorityQueueWithFunction(
+        lambda path: problem.getCostOfActions([x[1] for x in path]) + heuristic(path[len(path) - 1][0], problem))
+    return graph_search(problem, fringe)
 
 
 # Abbreviations

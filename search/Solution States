@@ -1,0 +1,29 @@
+DFS
+
+python pacman.py -l tinyMaze -p SearchAgent         Search nodes expanded: 15   Score: 500
+python pacman.py -l mediumMaze -p SearchAgent       Search nodes expanded: 146  Score: 380
+python pacman.py -l bigMaze -z .5 -p SearchAgent    Search nodes expanded: 390  Score: 300
+
+BFS
+
+python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs         Search nodes expanded: 269  Score: 442
+python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5      Search nodes expanded: 620  Score: 300
+
+UCS
+
+python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs         Search nodes expanded: 269  Score: 442
+python pacman.py -l mediumDottedMaze -p StayEastSearchAgent     Search nodes expanded: 186  Score: 646
+python pacman.py -l mediumScaryMaze -p StayWestSearchAgent      Search nodes expanded: 108  Score: 418
+
+A*
+
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic   Search nodes expanded: 549  Score: 300
+
+Finding Corners
+
+python pacman.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem        Search nodes expanded: 252  Score: 512
+python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem      Search nodes expanded: 1966 Score: 434
+
+Corner Heuristics
+
+python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5       Search nodes expanded: 1685 Score: 434

@@ -389,11 +389,14 @@ def cornersHeuristic(state, problem):
     # Max - 2120
     # Min - 1966
     # Sum all distances - 2068
-    # L2 norm 1685
+    # L2 norm - 1685
+    # L2 norm + state cost - undefined
+    # print state
     corners = list(problem.corners)  # These are the corner coordinates
     # print corners
     # walls = problem.walls  # These are the walls of the maze, as a Grid (game.py)
     cost = 0
+    # print state
     current_position = state[0]
     while corners:
         closest_corner, dist = next_closest_corner(current_position, corners)

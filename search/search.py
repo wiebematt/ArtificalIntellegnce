@@ -130,7 +130,8 @@ def graph_search(problem, fringe):
 
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
-    fringe = util.PriorityQueueWithFunction(len)
+    # fringe = util.PriorityQueueWithFunction(len)
+    fringe = util.Queue()
     return graph_search(problem, fringe)
 
 

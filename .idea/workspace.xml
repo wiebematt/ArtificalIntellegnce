@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3eaa9ae-6bd9-4a74-bdcd-e27c9b8f6e70" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search/Solution States" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/search.py" afterPath="$PROJECT_DIR$/search/search.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/searchAgents.py" afterPath="$PROJECT_DIR$/search/searchAgents.py" />
@@ -42,8 +43,8 @@
       <file leaf-file-name="search.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-117">
-              <caret line="104" column="39" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="39" />
+            <state relative-caret-position="643">
+              <caret line="154" column="102" selection-start-line="154" selection-start-column="81" selection-end-line="154" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -52,8 +53,8 @@
       <file leaf-file-name="searchAgents.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search/searchAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="391" column="18" selection-start-line="391" selection-start-column="18" selection-end-line="391" selection-end-column="18" />
+            <state relative-caret-position="-259">
+              <caret line="412" column="61" selection-start-line="412" selection-start-column="50" selection-end-line="412" selection-end-column="61" />
               <folding>
                 <element signature="e#1500#1787#0" expanded="false" />
                 <element signature="e#2042#5357#0" expanded="false" />
@@ -71,6 +72,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Solution States" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/Solution States">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="28" column="54" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pacman.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/pacman.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,7 +95,7 @@
       <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
+            <state relative-caret-position="79">
               <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding>
                 <element signature="e#1409#11763#0" expanded="false" />
@@ -116,16 +127,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/game.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="46" column="77" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -144,9 +145,10 @@
         <option value="$PROJECT_DIR$/search/pacman.py" />
         <option value="$PROJECT_DIR$/search/game.py" />
         <option value="$PROJECT_DIR$/search/util.py" />
-        <option value="$PROJECT_DIR$/search/search.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/search/search.py" />
         <option value="$PROJECT_DIR$/search/searchAgents.py" />
+        <option value="$PROJECT_DIR$/search/Solution States" />
       </list>
     </option>
   </component>
@@ -216,6 +218,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_284a859b0e6deba86edc624fef1e4db2aa8241a9/cmd/git.exe" />
+    <property name="SearchEverywhereHistoryKey" value="AStarCornersAgent&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -593,6 +596,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d3eaa9ae-6bd9-4a74-bdcd-e27c9b8f6e70" name="Default" comment="" />
@@ -608,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1473970321579</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implemented L2 heuristic">
+      <created>1473988192867</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1473988192867</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -648,12 +661,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding UCS and Astar.&#10;Heuristic deals with the size of the path of to determine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding UCS and Astar.&#10;Heuristic deals with the size of the path of to determine" />
+    <MESSAGE value="Implemented L2 heuristic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented L2 heuristic" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -934,9 +948,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/search/pacman.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="691" column="13" selection-start-line="691" selection-start-column="8" selection-end-line="691" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3780">
+          <caret line="46" column="77" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
+        <state relative-caret-position="79">
           <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
           <folding>
             <element signature="e#1409#11763#0" expanded="false" />
@@ -967,30 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/pacman.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="691" column="13" selection-start-line="691" selection-start-column="8" selection-end-line="691" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="46" column="77" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search/commands.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -999,18 +1013,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/search/Solution States">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search/search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="104" column="39" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="39" />
+        <state relative-caret-position="643">
+          <caret line="154" column="102" selection-start-line="154" selection-start-column="81" selection-end-line="154" selection-end-column="102" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search/searchAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="391" column="18" selection-start-line="391" selection-start-column="18" selection-end-line="391" selection-end-column="18" />
+        <state relative-caret-position="-259">
+          <caret line="412" column="61" selection-start-line="412" selection-start-column="50" selection-end-line="412" selection-end-column="61" />
           <folding>
             <element signature="e#1500#1787#0" expanded="false" />
             <element signature="e#2042#5357#0" expanded="false" />

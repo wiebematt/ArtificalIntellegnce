@@ -93,7 +93,9 @@ def depthFirstSearch(problem):
 
 
 def graph_search(problem, fringe):
-    """ Generic Graph search algorithm. Fringe is the data structure of choice."""
+    """
+    Generic Graph search algorithm. Fringe is the data structure of choice. Based on the entry given in the book.
+    """
     # print "Start:", problem.getStartState()
     # print "Is the start a goal?", problem.isGoalState(problem.getStartState())
     # print "Start's successors:", problem.getSuccessors(problem.getStartState())

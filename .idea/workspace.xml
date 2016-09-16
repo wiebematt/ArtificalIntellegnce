@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3eaa9ae-6bd9-4a74-bdcd-e27c9b8f6e70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/search.py" afterPath="$PROJECT_DIR$/search/search.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/searchAgents.py" afterPath="$PROJECT_DIR$/search/searchAgents.py" />
@@ -19,6 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ArtificalIntellegnce$pacman.coverage" NAME="pacman Coverage Results" MODIFIED="1473722865790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
+    <SUITE FILE_PATH="coverage/ArtificalIntellegnce$test.coverage" NAME="test Coverage Results" MODIFIED="1473987368404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -32,28 +32,28 @@
       <file leaf-file-name="commands.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/commands.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="76" />
+            <state relative-caret-position="528">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search/search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+            <state relative-caret-position="-117">
+              <caret line="104" column="39" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchAgents.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="searchAgents.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search/searchAgents.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1285">
-              <caret line="299" column="32" selection-start-line="299" selection-start-column="32" selection-end-line="299" selection-end-column="32" />
+            <state relative-caret-position="427">
+              <caret line="391" column="18" selection-start-line="391" selection-start-column="18" selection-end-line="391" selection-end-column="18" />
               <folding>
                 <element signature="e#1500#1787#0" expanded="false" />
                 <element signature="e#2042#5357#0" expanded="false" />
@@ -61,7 +61,11 @@
                 <element signature="e#8969#9391#0" expanded="false" />
                 <element signature="e#9438#9836#0" expanded="false" />
                 <element signature="e#9895#10054#0" expanded="false" />
-                <element signature="e#10113#10285#0" expanded="false" />
+                <element signature="e#10704#11373#0" expanded="false" />
+                <element signature="e#11412#11629#0" expanded="false" />
+                <element signature="e#11673#11870#0" expanded="false" />
+                <element signature="e#11916#13460#0" expanded="false" />
+                <element signature="e#13511#13996#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -141,6 +145,7 @@
         <option value="$PROJECT_DIR$/search/game.py" />
         <option value="$PROJECT_DIR$/search/util.py" />
         <option value="$PROJECT_DIR$/search/search.py" />
+        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/search/searchAgents.py" />
       </list>
     </option>
@@ -184,7 +189,24 @@
     <panes>
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
@@ -214,6 +236,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/search/commands.txt</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/search/search.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/search/searchAgents.py</PATH>
         </FILE-GROUP>
@@ -311,7 +334,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Python.pacman">
+  <component name="RunManager" selected="Python.test">
     <configuration default="false" name="pacman" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -326,6 +349,24 @@
       <module name="ArtificalIntellegnce" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search/pacman.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ArtificalIntellegnce" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -538,12 +579,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.pacman" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.pacman" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pacman" />
       </list>
     </recent_temporary>
   </component>
@@ -558,24 +601,32 @@
       <option name="presentableId" value="Default" />
       <updated>1473384570404</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding UCS and Astar.&#10;Heuristic deals with the size of the path of to determine">
+      <created>1473970321579</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1473970321579</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1967742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1967742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298466" sideWeight="0.5012903" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298466" sideWeight="0.49870968" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917532" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298466" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33124128" sideWeight="0.49806452" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998614" sideWeight="0.49870297" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958158" sideWeight="0.49870297" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -595,9 +646,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding UCS and Astar.&#10;Heuristic deals with the size of the path of to determine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding UCS and Astar.&#10;Heuristic deals with the size of the path of to determine" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -629,7 +685,11 @@
             <element signature="e#8969#9391#0" expanded="false" />
             <element signature="e#9438#9836#0" expanded="false" />
             <element signature="e#9895#10054#0" expanded="false" />
-            <element signature="e#10113#10285#0" expanded="false" />
+            <element signature="e#10704#11373#0" expanded="false" />
+            <element signature="e#11412#11629#0" expanded="false" />
+            <element signature="e#11673#11870#0" expanded="false" />
+            <element signature="e#11916#13460#0" expanded="false" />
+            <element signature="e#13511#13996#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -710,7 +770,11 @@
             <element signature="e#8969#9391#0" expanded="false" />
             <element signature="e#9438#9836#0" expanded="false" />
             <element signature="e#9895#10054#0" expanded="false" />
-            <element signature="e#10113#10285#0" expanded="false" />
+            <element signature="e#10704#11373#0" expanded="false" />
+            <element signature="e#11412#11629#0" expanded="false" />
+            <element signature="e#11673#11870#0" expanded="false" />
+            <element signature="e#11916#13460#0" expanded="false" />
+            <element signature="e#13511#13996#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -798,7 +862,11 @@
             <element signature="e#8969#9391#0" expanded="false" />
             <element signature="e#9438#9836#0" expanded="false" />
             <element signature="e#9895#10054#0" expanded="false" />
-            <element signature="e#10113#10285#0" expanded="false" />
+            <element signature="e#10704#11373#0" expanded="false" />
+            <element signature="e#11412#11629#0" expanded="false" />
+            <element signature="e#11673#11870#0" expanded="false" />
+            <element signature="e#11916#13460#0" expanded="false" />
+            <element signature="e#13511#13996#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -915,18 +983,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/search/commands.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="76" />
+        <state relative-caret-position="528">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="104" column="39" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search/searchAgents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1285">
-          <caret line="299" column="32" selection-start-line="299" selection-start-column="32" selection-end-line="299" selection-end-column="32" />
+        <state relative-caret-position="427">
+          <caret line="391" column="18" selection-start-line="391" selection-start-column="18" selection-end-line="391" selection-end-column="18" />
           <folding>
             <element signature="e#1500#1787#0" expanded="false" />
             <element signature="e#2042#5357#0" expanded="false" />
@@ -934,16 +1018,12 @@
             <element signature="e#8969#9391#0" expanded="false" />
             <element signature="e#9438#9836#0" expanded="false" />
             <element signature="e#9895#10054#0" expanded="false" />
-            <element signature="e#10113#10285#0" expanded="false" />
+            <element signature="e#10704#11373#0" expanded="false" />
+            <element signature="e#11412#11629#0" expanded="false" />
+            <element signature="e#11673#11870#0" expanded="false" />
+            <element signature="e#11916#13460#0" expanded="false" />
+            <element signature="e#13511#13996#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

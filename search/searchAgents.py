@@ -361,6 +361,18 @@ class CornersProblem(search.SearchProblem):
         return len(actions)
 
 
+def next_closest_corner(current_position, corners):
+    from math import sqrt, pow
+    dist = float("inf")
+    closest_corner = 0
+    for corner in corners:
+        corner_cost = sqrt(pow(current_position[0] - corner[0], 2) + pow(current_position[1] - corner[1], 2))
+        if corner_cost < dist:
+            closest_corner = corner
+            dist = corner_cost
+    return closest_corner, dist
+
+
 def cornersHeuristic(state, problem):
     """
     A heuristic for the CornersProblem that you defined.
@@ -374,11 +386,21 @@ def cornersHeuristic(state, problem):
     shortest path from the state to a goal of the problem; i.e.  it should be
     admissible (as well as consistent).
     """
-    corners = problem.corners  # These are the corner coordinates
-    walls = problem.walls  # These are the walls of the maze, as a Grid (game.py)
-
-    "*** YOUR CODE HERE ***"
-    return 0  # Default to trivial solution
+    # Max - 2120
+    # Min - 1966
+    # Sum all distances - 2068
+    # L2 norm 1685
+    corners = list(problem.corners)  # These are the corner coordinates
+    # print corners
+    # walls = problem.walls  # These are the walls of the maze, as a Grid (game.py)
+    cost = 0
+    current_position = state[0]
+    while corners:
+        closest_corner, dist = next_closest_corner(current_position, corners)
+        current_position = closest_corner
+        cost += dist
+        corners.remove(closest_corner)
+    return cost
 
 
 class AStarCornersAgent(SearchAgent):

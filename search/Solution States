@@ -26,4 +26,4 @@ python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem  
 
 Corner Heuristics
 
-python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5       Search nodes expanded: 1685 Score: 434
+python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5      Search nodes expanded: 806 Score: 434

@@ -303,7 +303,7 @@ class CornersProblem(search.SearchProblem):
         Returns the start state (in your state space, not the full Pacman state
         space)
         """
-        return self.startingPosition, [self.corners[0], self.corners[1], self.corners[2], self.corners[3]]
+        return self.startingPosition, list(self.corners)
 
     def isGoalState(self, state):
         """
@@ -389,10 +389,10 @@ def cornersHeuristic(state, problem):
     # Max - 2120
     # Min - 1966
     # Sum all distances - 2068
-    # L2 norm - 1685
-    # L2 norm + state cost - undefined
+    # L2 norm with all the rest of the corners considered- 806
+
     # print state
-    corners = list(problem.corners)  # These are the corner coordinates
+    corners = state[1][:]  # These are the corner coordinates
     # print corners
     # walls = problem.walls  # These are the walls of the maze, as a Grid (game.py)
     cost = 0
@@ -503,8 +503,10 @@ def foodHeuristic(state, problem):
     problem.heuristicInfo['wallCount']
     """
     position, foodGrid = state
-    "*** YOUR CODE HERE ***"
-    return 0
+    try:
+        return max(map(lambda x: mazeDistance(position, x, problem.startingGameState), foodGrid.asList()), 0)
+    except ValueError:
+        return 0
 
 
 class ClosestDotSearchAgent(SearchAgent):

@@ -502,9 +502,13 @@ def foodHeuristic(state, problem):
     Subsequent calls to this heuristic can access
     problem.heuristicInfo['wallCount']
     """
-    position, foodGrid = state
+    position, food_grid = state
     try:
-        return max(map(lambda x: mazeDistance(position, x, problem.startingGameState), foodGrid.asList()), 0)
+        # using sum - Search nodes expanded: 308    Score: 510
+        # using min - Timeout
+        # using max - Search nodes expanded: 4137   Score: 570
+        # using max must be keeping the maximum optimal distance to any given food as low as possible
+        return max(map(lambda x: mazeDistance(position, x, problem.startingGameState), food_grid.asList()))
     except ValueError:
         return 0
 

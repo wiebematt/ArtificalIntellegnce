@@ -362,11 +362,10 @@ class CornersProblem(search.SearchProblem):
 
 
 def next_closest_corner(current_position, corners):
-    from math import sqrt, pow
     dist = float("inf")
     closest_corner = 0
     for corner in corners:
-        corner_cost = sqrt(pow(current_position[0] - corner[0], 2) + pow(current_position[1] - corner[1], 2))
+        corner_cost = ((current_position[0] - corner[0]) ** 2 + (current_position[1] - corner[1]) ** 2) ** 0.5
         if corner_cost < dist:
             closest_corner = corner
             dist = corner_cost
@@ -386,10 +385,10 @@ def cornersHeuristic(state, problem):
     shortest path from the state to a goal of the problem; i.e.  it should be
     admissible (as well as consistent).
     """
-    # Max - 2120
-    # Min - 1966
+    # Max distance - 2120
+    # Min distance - 1966
     # Sum all distances - 2068
-    # L2 norm with all the rest of the corners considered- 806
+    # L2 norm with all the rest of the corners considered w/ L2 norm - 806
 
     # print state
     corners = state[1][:]  # These are the corner coordinates
@@ -504,7 +503,7 @@ def foodHeuristic(state, problem):
     """
     position, food_grid = state
     try:
-        # using sum - Search nodes expanded: 308    Score: 510
+        # using sum - Search nodes expanded: 308  Score: 510 note: this is not the optimal score according to autograder
         # using min - Timeout
         # using max - Search nodes expanded: 4137   Score: 570
         # using max must be keeping the maximum optimal distance to any given food as low as possible

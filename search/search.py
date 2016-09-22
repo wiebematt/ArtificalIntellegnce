@@ -96,35 +96,22 @@ def graph_search(problem, fringe):
     """
     Generic Graph search algorithm. Fringe is the data structure of choice. Based on the entry given in the book.
     """
-    # print "Start:", problem.getStartState()
-    # print "Is the start a goal?", problem.isGoalState(problem.getStartState())
-    # print "Start's successors:", problem.getSuccessors(problem.getStartState())
     explored_points = []
-    # Tuple format: ( xy-position, directional string, weight )
-    from game import Directions
-    fringe.push([(problem.getStartState(), Directions.STOP, 0)])
+    # Tuple format: ( xy-position, directional list )
+    fringe.push((problem.getStartState(), []))
+
     # Need to store a list of pathways from the start position to the next node to explore.
     while not fringe.isEmpty():
-        path = fringe.pop()
-        # Get the next position to evaluate
-        position = path[len(path) - 1][0]
-        # Get the next position of the pathway
-        # print "Current Position: " + str(position)
+        position, actions = fringe.pop()
         if problem.isGoalState(position):
-            # print "Final Path", [x[1] for x in path][1:]
-            return [x[1] for x in path][1:]
-
+            return actions
         if position not in explored_points:
             explored_points.append(position)
 
-            for successor in problem.getSuccessors(position):
-                if successor[0] not in explored_points:
-                    successive_pathway = path[:]
-                    # need to make a copy of the path list
-                    successive_pathway.append(successor)
-                    # Append the successor on the path then push into the structure
-                    fringe.push(successive_pathway)
-                    # push each path possibility on the stack
+            for position, action, cost in problem.getSuccessors(position):
+                if position not in explored_points:
+                    new_action_list = actions + [action]
+                    fringe.push((position, new_action_list))
     return []
 
 
@@ -137,9 +124,7 @@ def breadthFirstSearch(problem):
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
-    priority_function = lambda path: problem.getCostOfActions([x[1] for x in path])
-    fringe = util.PriorityQueueWithFunction(priority_function)
-    print graph_search(problem, fringe)
+    fringe = util.PriorityQueueWithFunction(lambda new_state: problem.getCostOfActions(new_state[1]))
     return graph_search(problem, fringe)
 
 
@@ -153,10 +138,8 @@ def nullHeuristic(state, problem=None):
 
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
-    priority_function = lambda path: problem.getCostOfActions([x[1] for x in path]) + heuristic(path[len(path) - 1][0],
-                                                                                                problem)
-    fringe = util.PriorityQueueWithFunction(priority_function)
-    print graph_search(problem, fringe)
+    fringe = util.PriorityQueueWithFunction(
+        lambda new_state: problem.getCostOfActions(new_state[1]) + heuristic(new_state[0], problem))
     return graph_search(problem, fringe)
 
 

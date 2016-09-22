@@ -137,7 +137,9 @@ def breadthFirstSearch(problem):
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
-    fringe = util.PriorityQueueWithFunction(lambda path: problem.getCostOfActions([x[1] for x in path]))
+    priority_function = lambda path: problem.getCostOfActions([x[1] for x in path])
+    fringe = util.PriorityQueueWithFunction(priority_function)
+    print graph_search(problem, fringe)
     return graph_search(problem, fringe)
 
 
@@ -151,8 +153,10 @@ def nullHeuristic(state, problem=None):
 
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
-    fringe = util.PriorityQueueWithFunction(
-        lambda path: problem.getCostOfActions([x[1] for x in path]) + heuristic(path[len(path) - 1][0], problem))
+    priority_function = lambda path: problem.getCostOfActions([x[1] for x in path]) + heuristic(path[len(path) - 1][0],
+                                                                                                problem)
+    fringe = util.PriorityQueueWithFunction(priority_function)
+    print graph_search(problem, fringe)
     return graph_search(problem, fringe)
 
 

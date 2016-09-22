@@ -121,6 +121,7 @@ class GraphSearch(SearchProblem):
                     match = True
             if not match:
                 print 'invalid action sequence'
+                import sys
                 sys.exit(1)
         return total_cost
 

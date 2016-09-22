@@ -157,7 +157,7 @@ class PositionSearchProblem(search.SearchProblem):
         """
         self.walls = gameState.getWalls()
         self.startState = gameState.getPacmanPosition()
-        if start != None: self.startState = start
+        if start is not None: self.startState = start
         self.goal = goal
         self.costFn = costFn
         self.visualize = visualize
@@ -218,7 +218,7 @@ class PositionSearchProblem(search.SearchProblem):
         Returns the cost of a particular sequence of actions. If those actions
         include an illegal move, return 999999.
         """
-        if actions == None: return 999999
+        if actions is None: return 999999
         x, y = self.getStartState()
         cost = 0
         for action in actions:
@@ -537,13 +537,21 @@ class ClosestDotSearchAgent(SearchAgent):
         gameState.
         """
         # Here are some useful elements of the startState
-        startPosition = gameState.getPacmanPosition()
-        food = gameState.getFood()
-        walls = gameState.getWalls()
-        problem = AnyFoodSearchProblem(gameState)
+        # startPosition = gameState.getPacmanPosition()
+        # foodList = gameState.getFood().asList()
+        # walls = gameState.getWalls()
+        # path = []
+        # min_length = 999999999
+        # for food in foodList:
+        #     prob = PositionSearchProblem(gameState, start=food, goal=startPosition, warn=False, visualize=False)
+        #     new_path = search.bfs(prob)
+        #     if len(new_path) < min_length:
+        #         min_length = len(new_path)
+        #         path = new_path
+        # print path
 
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        problem = AnyFoodSearchProblem(gameState)
+        return search.bfs(problem)
 
 
 class AnyFoodSearchProblem(PositionSearchProblem):
@@ -577,10 +585,11 @@ class AnyFoodSearchProblem(PositionSearchProblem):
         The state is Pacman's position. Fill this in with a goal test that will
         complete the problem definition.
         """
-        x, y = state
-
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        foodList = self.food.asList()
+        # need to sort remaining food by their distance from state
+        l1, closest_food = min([(util.manhattanDistance(state, food), food) for food in foodList])
+        # if this is not true, means we still have food to find and true only if we don't
+        return state == closest_food
 
 
 def mazeDistance(point1, point2, gameState):

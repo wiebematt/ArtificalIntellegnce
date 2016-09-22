@@ -107,10 +107,12 @@ def graph_search(problem, fringe):
             return actions
 
         if position not in explored_points:
+            # print explored_points
             explored_points.append(position)
+            # print explored_points
             for nextState, action, cost in problem.getSuccessors(position):
                 if nextState not in explored_points:
-                    new_direction_list = actions.append(action)
+                    new_direction_list = actions + [action]
                     fringe.push((nextState, new_direction_list))
     return []
 
@@ -124,8 +126,7 @@ def breadthFirstSearch(problem):
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     # priority_function = lambda tuple: problem.getCostOfActions(tuple[1])
-    fringe = util.PriorityQueueWithFunction(lambda tuple: problem.getCostOfActions(tuple[1]))
-    print graph_search(problem, fringe)
+    fringe = util.PriorityQueueWithFunction(lambda next_state: problem.getCostOfActions(next_state[1]))
     return graph_search(problem, fringe)
 
 
@@ -142,8 +143,7 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     # priority_function = lambda path: problem.getCostOfActions([x[1] for x in path]) + heuristic(path[len(path) - 1][0],
     #                                                                                             problem)
     fringe = util.PriorityQueueWithFunction(
-        lambda tuple: problem.getCostOfActions(tuple[1]) + heuristic(tuple[0], problem))
-    print graph_search(problem, fringe)
+        lambda next_state: problem.getCostOfActions(next_state[1]) + heuristic(next_state[0], problem))
     return graph_search(problem, fringe)
 
 

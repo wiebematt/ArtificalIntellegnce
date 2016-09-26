@@ -97,7 +97,7 @@ def graph_search(problem, fringe):
     Generic Graph search algorithm. Fringe is the data structure of choice. Based on the entry given in the book.
     """
     explored_points = []
-    # Tuple format: ( xy-position, directional list )
+    # new_state: ( xy-position, directional list )
     fringe.push((problem.getStartState(), []))
 
     # Need to store a list of pathways from the start position to the next node to explore.
@@ -117,7 +117,6 @@ def graph_search(problem, fringe):
 
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
-    # fringe = util.PriorityQueueWithFunction(len)
     fringe = util.Queue()
     return graph_search(problem, fringe)
 

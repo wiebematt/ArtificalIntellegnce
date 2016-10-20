@@ -1,6 +1,5 @@
 import ujson as json
 
-
 class PizzaBot:
     """Ticary chatbot"""
     initialized = False

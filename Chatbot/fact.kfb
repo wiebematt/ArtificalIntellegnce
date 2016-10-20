@@ -1,1 +1,41 @@
 # facts relevant to the pizza place
+
+# fact.topping(topping, vegetarian)
+# fact.sauce(sauce, vegetarian)
+# fact.crust(crust, vegetarian)
+# fact.type(type, name, vegetarian)
+# fact.pizza(
+
+
+sauce(tomato, veg)
+sauce(,veg)
+sauce(oil, veg)
+sauce(pesto, veg)
+sauce(alfredo, non-veg)
+
+crust(normal, veg)
+crust(gluten-free, veg)
+
+topping(veg, tomato, veg)
+topping(veg,spinach, veg)
+topping(veg,onion, veg)
+topping(veg,red onion, veg)
+topping(veg,red pepper, veg)
+topping(veg,green pepper, veg)
+topping(cheese,parmesan, veg)
+topping(cheese,mozzarella, veg)
+topping(cheese,feta, veg)
+topping(cheese,asiago, veg)
+topping(meat,pepperoni, non-veg)
+topping(meat,italian sausage, non-veg)
+topping(meat,steak, non-veg)
+topping(meat,bacon, non-veg)
+topping(meat,BBQ chicken, non-veg)
+topping(meat,chorizo, non-veg)
+
+type(premade, ciclismo, veg)
+type(premade, yellow jersey, veg)
+type(premade, meat lovers, non-veg)
+type(premade, classic, non-veg)
+type(custom, ,veg)
+type(custom, ,non-veg)

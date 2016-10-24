@@ -1,7 +1,12 @@
 import ujson as json
 
+
 class PizzaBot:
     """Ticary chatbot"""
+
+    def __init__(self):
+        pass
+
     initialized = False
 
     @staticmethod

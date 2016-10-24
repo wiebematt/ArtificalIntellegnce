@@ -3,8 +3,9 @@
 # fact.topping(topping, vegetarian)
 # fact.sauce(sauce, vegetarian)
 # fact.crust(crust, vegetarian)
-# fact.type(type, name, vegetarian)
-# fact.pizza(
+# fact.type(food, type, vegetarian)
+# fact.size(size)
+
 
 
 sauce(tomato, veg)
@@ -33,9 +34,12 @@ topping(meat,bacon, non-veg)
 topping(meat,BBQ chicken, non-veg)
 topping(meat,chorizo, non-veg)
 
-type(premade, ciclismo, veg)
-type(premade, yellow jersey, veg)
-type(premade, meat lovers, non-veg)
-type(premade, classic, non-veg)
-type(custom, ,veg)
-type(custom, ,non-veg)
+type(pizza, premade, veg)
+type(pizza, premade, non-veg)
+type(pizza, custom, veg)
+type(pizza, custom, non-veg)
+
+size(small)
+size(medium)
+size(large)
+size(american)

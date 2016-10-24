@@ -1,1 +1,27 @@
 # Forward chaining based relations between facts
+
+invalid_answer
+    use use reset_if_wrong($question, $_, $_)
+
+ask_until_correct__try_again
+    use ask_until_correct($question, $right_ans)
+    when
+        python engine.get_ke('questions', $question).reset()
+        python print "Try again:"
+        ask_until_correct($question, $right_ans)
+
+ask_for_food
+
+
+ask_for_pizza
+
+
+ask_for_size
+
+ask_for_crust
+
+ask_for_sauce
+
+ask_for_cheese
+
+ask_for_toppings

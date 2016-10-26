@@ -2,450 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3eaa9ae-6bd9-4a74-bdcd-e27c9b8f6e70" name="Default" comment="Fixed the L2 heuristic and got the Food search problem done using maze distance">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/bc_rules2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/bc_rules5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/bc_rules8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/bc_rules9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client2b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client2d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3f2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3g.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/backtracking.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/backtracking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/bc_backtracking.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/bc_backtracking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/bc_rules.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/bc_rules.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/header.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan1.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan2.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan3.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/rule_base_categories.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/rule_base_categories.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/bc_rules2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/bc_rules5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/bc_rules8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/bc_rules9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client2b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client2d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3f2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3g.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3h.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/backtracking.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/backtracking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/bc_backtracking.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/bc_backtracking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/bc_rules.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/bc_rules.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/header.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan1.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan2.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan3.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/rule_base_categories.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/rule_base_categories.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/Schema.dia" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/Schema.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/sqlite3.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chatbot/questions.kqb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.hgignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.hgtags" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.idea/pyke-1.1.1.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/MANIFEST.in" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/PKG-INFO" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/RELEASE_NOTES-1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/RELEASE_NOTES-pre1.0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/CanNotProve.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/CanNotProve2.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/facts.kfb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/rules.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/Misc/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/Misc/generator_close.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/Misc/generator_exception_propagation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/Misc/generator_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/backup/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/backup/backup.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/backup/backup.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/backup/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/family_relations.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/findall.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/forall.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/knapsack.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/learn_pyke.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/notany.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/towers_of_hanoi.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/web_framework.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/first/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/first/family.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/first/test.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/first/test.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/pyketest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/Test/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/ask_tty.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/ask_wx.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/bc_rule.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/condensedPrint.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/contexts.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/fact_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/fc_rule.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/goal.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/immutable_dict.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/knowledge_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/knowledge_engine.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/compiler.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/compiler_bc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/helpers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/kfbparser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/kfbparser_tables.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/kqb_parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/krbparser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/krbparser_tables.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/README.pyke" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/lex.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/yacc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/scanner.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/scanner_tables.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_traceback.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/pattern.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/qa_helpers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/question_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/rule_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/special.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/target_pkg.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/unique.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/user_question.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/PyKE.mm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/ast_syntax" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/backups" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/css_help" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/pyke.filemap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/pyke.splicemap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/shamap.hg_order" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/shamap.svn_order" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/link_and_spell_checks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/making_a_release" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/r2w_restindex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/r2w_std_funs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/r2w_values" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/rest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/rest2web" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/sf_hg_access" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/web.upload" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/bc_related.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/bc_related0.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/error_test.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/family1.kfb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/family2.kfb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/fc_related.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/plan_example.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/some_module.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/user_questions.kqb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/PyCon2008-paper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/cooking_functions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/installing_pyke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/modifying_pyke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/steps_to_using_pyke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/what_is_pyke.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/examples.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/google45f8c2316aa06307.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/fact_bases.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/question_bases.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/rule_bases.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/special.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/literal_patterns.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/matching_patterns.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/pathological_answer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/pattern_variables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/tuple_patterns.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/plans.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/rules/backward_chaining.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/rules/forward_chaining.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/rules/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/statements.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/kfb_syntax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/kqb_syntax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/bc_rule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/compound_premise.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/fc_rule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/pattern.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/python_premise.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/sitemap.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/stylesheets/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/stylesheets/pyke.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/stylesheets/pysrc.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/stylesheets/rest.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/adding_facts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/creating_engine.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/other_functions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/proving_goals.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/r2w.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/PyCon2008-paper.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/cooking_functions.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/installing_pyke.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/modifying_pyke.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/steps_to_using_pyke.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/what_is_pyke.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/add_links" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/gather_links" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/gather_links.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/gen_html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/get_links.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/make_sitemap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/strip_links" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/copyright_license" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/examples.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/fact_bases.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/links" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/question_bases.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/rule_bases.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/special.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/links" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/literal_patterns.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/matching_patterns.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/pathological_answer.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/pattern_variables.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/tuple_patterns.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/plans.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/rules/backward_chaining.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/rules/forward_chaining.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/rules/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/statements.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/kfb_syntax.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/kqb_syntax.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/bc_rule.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/compound_premise.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/fc_rule.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/pattern.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/python_premise.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/links" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/template.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/adding_facts.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/creating_engine.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/other_functions.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/proving_goals.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/syntax" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/doc/todo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/bc2_example.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/bc_example.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/bc2_example_bc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/bc_example_bc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/compiled_pyke_files.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/example_bc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/example_fc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/example_plans.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/family.fbc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/fc_example_fc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/example.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/family.kfb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/fc_example.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/bc_findall.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/family.kfb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/fc_findall.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/bc_forall.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/bc_forall_bc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/compiled_pyke_files.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/family.fbc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/fc_forall_fc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/family.kfb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/fc_forall.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/compiled_krb/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/compiled_krb/compiled_pyke_files.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/compiled_krb/knapsack_bc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/knapsack.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/compiled_krb/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/compiled_krb/compiled_pyke_files.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/compiled_krb/pattern_matching_bc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/compiled_krb/questions.qbc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/pattern_matching.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/question order.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/questions.kqb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/testall.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/bc_notany.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/family.kfb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/fc_notany.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/catalog.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/create_database.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/create_tables.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/create_tables.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/database.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/director.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/driver_sqlite3.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/drop_tables.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/genre.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/load_mysql_schema.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/load_sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/load_sqlite3_schema.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/load_tables" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/movie.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/movie_director_link.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/testall.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/testall.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/driver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/towers2.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/towers_of_hanoi.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/development.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/siege.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/siege.urls.tg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/controllers/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/controllers/root.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/model/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/templates/movie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/templates/movie2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/director.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/movie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/movie2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/preforked_server.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/profile_server.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/siege.urls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/simple_server.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/testall.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/web.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/wsgi_app.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/experimental/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/experimental/cache_args.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/experimental/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/experimental/metaclass.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/experimental/multi_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/experimental/testall.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/hgrc_keywords" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/make_doc_tarball" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/make_release" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/ask_tty.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/ask_wx.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/bc_rule.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/condensedPrint.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/contexts.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/fact_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/fc_rule.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/goal.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/immutable_dict.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/knowledge_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/knowledge_engine.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/TEST/kfbparse_test.kfb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/TEST/krbparse_test.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/TEST/scan_test" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/compiler.krb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/compiler_bc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/generated_files.tst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/helpers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/kfbparser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/kfbparser_tables.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/kqb_parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/krbparser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/krbparser_tables.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/README.pyke" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/lex.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/yacc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/scanner.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/scanner_tables.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/testall.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_traceback.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/pattern.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/qa_helpers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/question_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/rule_base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/special.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/target_pkg.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/unique.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/pyke/user_question.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/setup.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pyke-1.1.1/testpyke" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ArtificalIntellegnce.iml" afterPath="$PROJECT_DIR$/.idea/ArtificalIntellegnce.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/fact.kfb" afterPath="$PROJECT_DIR$/Chatbot/fact.kfb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/kb2text.py" afterPath="$PROJECT_DIR$/Chatbot/kb2text.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/pizzabot.py" afterPath="$PROJECT_DIR$/Chatbot/pizzabot.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/relation.krb" afterPath="$PROJECT_DIR$/Chatbot/relation.krb" />
     </list>
     <ignored path="ArtificalIntellegnce.iws" />
@@ -459,9 +19,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ArtificalIntellegnce$test.coverage" NAME="test Coverage Results" MODIFIED="1473987368404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ArtificalIntellegnce$pacman.coverage" NAME="pacman Coverage Results" MODIFIED="1473722865790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/ArtificalIntellegnce$driver.coverage" NAME="driver Coverage Results" MODIFIED="1477346499001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/pyke-1.1.1/pyke-1.1.1/examples/learn_pyke" />
+    <SUITE FILE_PATH="coverage/ArtificalIntellegnce$pacman.coverage" NAME="pacman Coverage Results" MODIFIED="1473722865790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
+    <SUITE FILE_PATH="coverage/ArtificalIntellegnce$test.coverage" NAME="test Coverage Results" MODIFIED="1473987368404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -477,8 +37,8 @@
           <file leaf-file-name="pizzabot.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Chatbot/pizzabot.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="33" selection-end-column="28" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
                   <folding />
                 </state>
               </provider>
@@ -487,28 +47,18 @@
           <file leaf-file-name="fact.kfb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Chatbot/fact.kfb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="697">
-                  <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="44" selection-end-column="14" />
+                <state relative-caret-position="561">
+                  <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="relation.krb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="relation.krb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Chatbot/relation.krb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="questions.kqb" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Chatbot/questions.kqb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+                <state relative-caret-position="726">
+                  <caret line="22" column="13" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -517,8 +67,8 @@
           <file leaf-file-name="kb2text.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Chatbot/kb2text.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
+                <state relative-caret-position="561">
+                  <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -527,8 +77,8 @@
           <file leaf-file-name="runchatbot.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Chatbot/runchatbot.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="27" column="50" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="50" />
+                <state relative-caret-position="853">
+                  <caret line="27" column="58" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -540,21 +90,41 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="family.kfb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/family.kfb">
+          <file leaf-file-name="pattern_matching.krb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/pattern_matching.krb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="25" column="15" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="15" />
+                <state relative-caret-position="1022">
+                  <caret line="83" column="27" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pattern_matching.krb" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/pattern_matching.krb">
+          <file leaf-file-name="fc_example.krb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/fc_example.krb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="362">
-                  <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+                <state relative-caret-position="3729">
+                  <caret line="161" column="26" selection-start-line="161" selection-start-column="15" selection-end-line="161" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="driver.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/driver.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="181">
+                  <caret line="50" column="42" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="42" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="question order.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/question order.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="33">
+                  <caret line="1" column="28" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -563,8 +133,8 @@
           <file leaf-file-name="driver.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/driver.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+                <state relative-caret-position="528">
+                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -573,7 +143,7 @@
           <file leaf-file-name="questions.kqb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/questions.kqb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="849">
+                <state relative-caret-position="5247">
                   <caret line="159" column="18" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="18" />
                   <folding />
                 </state>
@@ -616,11 +186,11 @@
         <option value="$PROJECT_DIR$/Chatbot/pizzabot.py" />
         <option value="$PROJECT_DIR$/Chatbot/quesions.kqb" />
         <option value="$PROJECT_DIR$/Chatbot/questions.kqb" />
-        <option value="$PROJECT_DIR$/Chatbot/fact.kfb" />
-        <option value="$PROJECT_DIR$/Chatbot/relation.krb" />
-        <option value="$PROJECT_DIR$/Chatbot/kb2text.py" />
         <option value="$USER_HOME$/Downloads/pyke-1.1.1/pyke-1.1.1/examples/learn_pyke/driver.py" />
         <option value="$USER_HOME$/Downloads/pyke-1.1.1/pyke-1.1.1/examples/learn_pyke/pattern_matching.krb" />
+        <option value="$PROJECT_DIR$/Chatbot/fact.kfb" />
+        <option value="$PROJECT_DIR$/Chatbot/kb2text.py" />
+        <option value="$PROJECT_DIR$/Chatbot/relation.krb" />
       </list>
     </option>
   </component>
@@ -631,10 +201,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-16" />
+    <option name="y" value="-16" />
+    <option name="width" value="3232" />
+    <option name="height" value="1732" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -689,14 +259,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pyke-1.1.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyke-1.1.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyke-1.1.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="family_relations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArtificalIntellegnce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Chatbot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -707,12 +331,12 @@
     <property name="SearchEverywhereHistoryKey" value="AStarCornersAgent&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\matt\PycharmProjects\ArtificalIntellegnce\search" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mattw\PycharmProjects\ArtificalIntellegnce" />
       <recent name="C:\Users\mattw\Downloads\pyke-1.1.1\pyke-1.1.1\examples\knapsack" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\matt\PycharmProjects\ArtificalIntellegnce\search" />
     </key>
   </component>
   <component name="RunManager" selected="Python.driver">
@@ -997,27 +621,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16151386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16580646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298466" sideWeight="0.5012903" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49870968" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49729145" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31744313" sideWeight="0.49806452" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36944744" sideWeight="0.49870297" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49729145" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36944744" sideWeight="0.49870297" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1082,7 +706,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/search/game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -1262,16 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/runchatbot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/example.krb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1290,15 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/fc_example.krb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="137" column="24" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1306,63 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/pizzabot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="33" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/relation.krb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/kb2text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/family.kfb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="64" column="54" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/fact.kfb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="44" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/questions.kqb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1378,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1386,10 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="365" column="0" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-          <folding>
-            <marker date="1477346761716" expanded="true" signature="13522:13692" ph="..." />
-            <marker date="1477346761716" expanded="true" signature="13564:13692" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1397,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1413,32 +952,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="605" column="0" selection-start-line="605" selection-start-column="0" selection-end-line="605" selection-end-column="0" />
-          <folding>
-            <marker date="1477346761706" expanded="true" signature="19101:19158" ph="import ..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="528">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/questions.kqb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="849">
+        <state relative-caret-position="5247">
           <caret line="159" column="18" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/question order.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/pizzabot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/questions.kqb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="18" selection-start-line="3" selection-start-column="21" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/runchatbot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/kb2text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/fact.kfb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/family.kfb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/pattern_matching.krb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="1022">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/fc_example.krb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3729">
+          <caret line="161" column="26" selection-start-line="161" selection-start-column="15" selection-end-line="161" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/relation.krb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>

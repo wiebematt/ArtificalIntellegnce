@@ -1,5 +1,7 @@
 # Forward chaining based relations between facts
-
+# verify pizza
+# pizzacontains(pep, topping)
+have overall goal and
 invalid_answer
     use use reset_if_wrong($question, $_, $_)
 
@@ -25,3 +27,4 @@ ask_for_sauce
 ask_for_cheese
 
 ask_for_toppings
+    made_pizza()

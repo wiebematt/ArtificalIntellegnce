@@ -6,8 +6,6 @@
 # fact.type(food, type, vegetarian)
 # fact.size(size)
 
-
-
 sauce(tomato, veg)
 sauce(,veg)
 sauce(oil, veg)

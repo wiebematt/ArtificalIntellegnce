@@ -25,14 +25,6 @@ class PizzaBot:
         in_json = json.loads(inp)
         text = in_json["text"]
 
-        ####################
-
-
-        ## ENTER YOUR CODE HERE
-
-
-        ####################
-
         response = {"answer": text, "type": "followup"}
         respstr = json.dumps(response)
         return respstr

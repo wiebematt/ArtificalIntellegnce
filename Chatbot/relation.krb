@@ -1,30 +1,20 @@
 # Forward chaining based relations between facts
 # verify pizza
 # pizzacontains(pep, topping)
-have overall goal and
-invalid_answer
-    use use reset_if_wrong($question, $_, $_)
-
-ask_until_correct__try_again
-    use ask_until_correct($question, $right_ans)
-    when
-        python engine.get_ke('questions', $question).reset()
-        python print "Try again:"
-        ask_until_correct($question, $right_ans)
 
 ask_for_food
 
-
-ask_for_pizza
-
-
-ask_for_size
-
-ask_for_crust
-
-ask_for_sauce
-
-ask_for_cheese
-
 ask_for_toppings
-    made_pizza()
+
+ask_for_pizza_veg
+    foreach
+        fact.type($type)
+        fact.size($size)
+        fact.crust($crust)
+        fact.sauce($sauce, $vegetarian)
+        check $vegetarian != non-veg
+        fact.cheese($cheese)
+        fact.topping((($name, $veg), )
+    assert
+        fact.pizza($type, $size, $crust, $sauce, (*$_), $vegetarian)
+

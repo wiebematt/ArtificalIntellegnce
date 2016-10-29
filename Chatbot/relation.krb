@@ -3,8 +3,10 @@
 # pizzacontains(pep, topping)
 
 ask_for_food
+    use ask_for_food
+    when
 
-ask_for_toppings
+ask_veggie
 
 ask_for_pizza_veg
     foreach

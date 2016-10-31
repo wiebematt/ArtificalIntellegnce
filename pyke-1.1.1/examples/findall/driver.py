@@ -3,7 +3,7 @@
 from __future__ import with_statement
 import sys
 from pyke import knowledge_engine
-from pyke import krb_traceback
+from pyke import krb_traceback, ask_tty
 
 engine = knowledge_engine.engine(__file__)
 
@@ -28,3 +28,6 @@ def bc_test():
     except:
         krb_traceback.print_exc()
         sys.exit(1)
+
+
+fc_test()

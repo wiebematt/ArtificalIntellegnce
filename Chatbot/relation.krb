@@ -1,22 +1,73 @@
 # Forward chaining based relations between facts
-# verify pizza
-# pizzacontains(pep, topping)
 
-ask_for_food
-    use ask_for_food
-    when
+ask_for_custom_pizza
+    assert fact.user_type(custom)
+    assert
+        fact.pizza($user_type, $user_size, $user_crust, $user_sauce, $user_cheese, $user_toppings)
+
+
+ask_size
+    foreach
+        fact.user_type($type)
+        python
+            import kb2text
+            size = kb2text.askquestion("size")
+        $user_size = size
+    assert fact.user_size($user_size)
+
+ask_crust
+    foreach
+        fact.user_size($size)
+        python
+            import kb2text
+            crust = kb2text.askquestion("crust")
+        $user_crust = crust
+    assert fact.user_crust($user_crust)
+
+ask_sauce
+    foreach
+        fact.user_crust($crust)
+        python
+            import kb2text
+            size = kb2text.askquestion("sauce")
+        $user_sauce = size
+    assert fact.user_sauce($user_sauce)
+
+ask_cheese
+    foreach
+        fact.user_sauce($sauce)
+        python
+            import kb2text
+            cheese = kb2text.askquestion("cheese")
+        $user_cheese = cheese
+    assert fact.user_cheese($user_cheese)
 
 ask_veggie
-
-ask_for_pizza_veg
     foreach
-        fact.type($type)
-        fact.size($size)
-        fact.crust($crust)
-        fact.sauce($sauce, $vegetarian)
-        check $vegetarian != non-veg
-        fact.cheese($cheese)
-        fact.topping((($name, $veg), )
-    assert
-        fact.pizza($type, $size, $crust, $sauce, (*$_), $vegetarian)
+        fact.user_cheese($cheese)
+        python
+            import kb2text
+            veggie = kb2text.ask_veggie()
+        $user_veggie = veggie
+    assert fact.user_veggie($user_veggie)
+
+ask_veggie_toppings
+    foreach
+        fact.topping($topping, True)
+        assert fact.veggie_toppings($topping)
+    python
+        import kb2text
+        selected_toppings = kb2text.askquestion("veggie_topping")
+        $selected_toppings = selected_toppings
+    assert fact.user_toppings($selected_toppings)
+
+ask_all_toppings
+    foreach
+        fact.user_veggie($user_veggie)
+        python
+            import kb2text
+            selected_toppings = kb2text.askquestion("toppings")
+        $selected_toppings = selected_toppings
+    assert fact.user_toppings($selected_toppings)
+
 

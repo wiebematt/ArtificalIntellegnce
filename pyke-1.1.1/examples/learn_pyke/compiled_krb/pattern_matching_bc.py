@@ -7,7 +7,6 @@ from pyke import contexts, pattern, bc_rule
 pyke_version = '1.1.1'
 compiler_version = 1
 
-
 def knows_pattern_matching(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -33,7 +32,6 @@ def knows_pattern_matching(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def knows_pattern_matching_2(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -58,7 +56,6 @@ def knows_pattern_matching_2(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def knows_pat_master(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -82,7 +79,6 @@ def knows_pat_master(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def learned_pattern_matching(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -115,6 +111,57 @@ def learned_pattern_matching(rule, arg_patterns, arg_context):
             context.done()
 
 
+def taught_pattern_matching_1_2_4_16(rule, arg_patterns, arg_context):
+    engine = rule.rule_base.engine
+    patterns = rule.goal_arg_patterns()
+    if len(arg_patterns) == len(patterns):
+        context = contexts.bc_context(rule)
+        try:
+            if all(itertools.imap(lambda pat, arg:
+                                  pat.match_pattern(context, context,
+                                                    arg, arg_context),
+                                  patterns,
+                                  arg_patterns)):
+                rule.rule_base.num_bc_rules_matched += 1
+                with engine.prove('questions', 'pat_master', context,
+                                  (rule.pattern(0),)) \
+                        as gen_1:
+                    for x_1 in gen_1:
+                        assert x_1 is None, \
+                            "pattern_matching.taught_pattern_matching_1_2_4_16: got unexpected plan from when clause 1"
+                        if context.lookup_data('ans') in (1, 2, 4, 16):
+                            with engine.prove(rule.rule_base.root_name, 'knows_pattern_variable_syntax', context,
+                                              ()) \
+                                    as gen_3:
+                                for x_3 in gen_3:
+                                    assert x_3 is None, \
+                                        "pattern_matching.taught_pattern_matching_1_2_4_16: got unexpected plan from when clause 3"
+                                    with engine.prove(rule.rule_base.root_name, 'knows_patterns', context,
+                                                      ()) \
+                                            as gen_4:
+                                        for x_4 in gen_4:
+                                            assert x_4 is None, \
+                                                "pattern_matching.taught_pattern_matching_1_2_4_16: got unexpected plan from when clause 4"
+                                            with engine.prove(rule.rule_base.root_name, 'knows_how_patterns_match',
+                                                              context,
+                                                              ()) \
+                                                    as gen_5:
+                                                for x_5 in gen_5:
+                                                    assert x_5 is None, \
+                                                        "pattern_matching.taught_pattern_matching_1_2_4_16: got unexpected plan from when clause 5"
+                                                    with engine.prove(rule.rule_base.root_name,
+                                                                      'knows_pattern_variable_scope', context,
+                                                                      ()) \
+                                                            as gen_6:
+                                                        for x_6 in gen_6:
+                                                            assert x_6 is None, \
+                                                                "pattern_matching.taught_pattern_matching_1_2_4_16: got unexpected plan from when clause 6"
+                                                            rule.rule_base.num_bc_rule_successes += 1
+                                                            yield
+                rule.rule_base.num_bc_rule_failures += 1
+        finally:
+            context.done()
+
 def taught_pattern_matching_3_5_6_9_15(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -145,7 +192,6 @@ def taught_pattern_matching_3_5_6_9_15(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def taught_pattern_matching_7_8_10(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -178,7 +224,6 @@ def taught_pattern_matching_7_8_10(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def taught_pattern_matching_11_12(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -209,7 +254,6 @@ def taught_pattern_matching_11_12(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def taught_pattern_matching_14(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -248,7 +292,6 @@ def taught_pattern_matching_14(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def knows_pattern_variable_syntax(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -272,7 +315,6 @@ def knows_pattern_variable_syntax(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def reset_if_wrong__right(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -298,7 +340,6 @@ def reset_if_wrong__right(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def reset_if_wrong__wrong(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -317,7 +358,6 @@ def reset_if_wrong__wrong(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def knows_patterns(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -344,7 +384,7 @@ def knows_patterns(rule, arg_patterns, arg_context):
                                 assert x_2 is None, \
                                     "pattern_matching.knows_patterns: got unexpected plan from when clause 2"
                                 with engine.prove(rule.rule_base.root_name, 'knows_tuple_patterns', context,
-                                                  ()) \
+                                  ()) \
                                         as gen_3:
                                     for x_3 in gen_3:
                                         assert x_3 is None, \
@@ -354,7 +394,6 @@ def knows_patterns(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def knows_literal_patterns(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -380,7 +419,6 @@ def knows_literal_patterns(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def ask_until_correct__ask(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -412,7 +450,6 @@ def ask_until_correct__ask(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def ask_until_correct__try_again(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -439,7 +476,6 @@ def ask_until_correct__try_again(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def knows_pattern_variables(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -471,7 +507,6 @@ def knows_pattern_variables(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def knows_pattern_variable_scope(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -497,19 +532,18 @@ def knows_pattern_variable_scope(rule, arg_patterns, arg_context):
                             for x_2 in gen_2:
                                 assert x_2 is None, \
                                     "pattern_matching.knows_pattern_variable_scope: got unexpected plan from when clause 2"
-                                with engine.prove(rule.rule_base.root_name, 'ask_until_correct', context,
-                                                  (rule.pattern(3),
-                                                   rule.pattern(4),)) \
-                                        as gen_3:
-                                    for x_3 in gen_3:
-                                        assert x_3 is None, \
-                                            "pattern_matching.knows_pattern_variable_scope: got unexpected plan from when clause 3"
-                                        rule.rule_base.num_bc_rule_successes += 1
-                                        yield
+                with engine.prove(rule.rule_base.root_name, 'ask_until_correct', context,
+                                  (rule.pattern(3),
+                                   rule.pattern(4),)) \
+                        as gen_3:
+                    for x_3 in gen_3:
+                        assert x_3 is None, \
+                            "pattern_matching.knows_pattern_variable_scope: got unexpected plan from when clause 3"
+                        rule.rule_base.num_bc_rule_successes += 1
+                        yield
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def knows_how_patterns_match(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -548,7 +582,6 @@ def knows_how_patterns_match(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def post_process_pattern_scope_1(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -575,7 +608,7 @@ def post_process_pattern_scope_1(rule, arg_patterns, arg_context):
                                     "pattern_matching.post_process_pattern_scope_1: got unexpected plan from when clause 2"
                                 engine.get_ke('questions', 'pattern_scope').reset()
                                 with engine.prove(rule.rule_base.root_name, 'knows_how_patterns_match', context,
-                                                  ()) \
+                                  ()) \
                                         as gen_4:
                                     for x_4 in gen_4:
                                         assert x_4 is None, \
@@ -585,7 +618,6 @@ def post_process_pattern_scope_1(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def post_process_pattern_scope_2(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -612,8 +644,8 @@ def post_process_pattern_scope_2(rule, arg_patterns, arg_context):
                             for x_3 in gen_3:
                                 assert x_3 is None, \
                                     "pattern_matching.post_process_pattern_scope_2: got unexpected plan from when clause 3"
-                                rule.rule_base.num_bc_rule_successes += 1
-                                yield
+                rule.rule_base.num_bc_rule_successes += 1
+                yield
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
@@ -636,7 +668,6 @@ def post_process_pattern_scope_3(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def post_process_pattern_scope_4(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -664,7 +695,7 @@ def post_process_pattern_scope_4(rule, arg_patterns, arg_context):
                                     "pattern_matching.post_process_pattern_scope_4: got unexpected plan from when clause 2"
                                 engine.get_ke('questions', 'pattern_scope').reset()
                                 with engine.prove(rule.rule_base.root_name, 'knows_how_patterns_match', context,
-                                                  ()) \
+                                  ()) \
                                         as gen_4:
                                     for x_4 in gen_4:
                                         assert x_4 is None, \
@@ -674,7 +705,6 @@ def post_process_pattern_scope_4(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def post_process_pattern_scope_5(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -707,7 +737,6 @@ def post_process_pattern_scope_5(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def post_process_pattern_scope_6(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -734,7 +763,7 @@ def post_process_pattern_scope_6(rule, arg_patterns, arg_context):
                                     "pattern_matching.post_process_pattern_scope_6: got unexpected plan from when clause 2"
                                 engine.get_ke('questions', 'pattern_scope').reset()
                                 with engine.prove(rule.rule_base.root_name, 'knows_how_patterns_match', context,
-                                                  ()) \
+                                  ()) \
                                         as gen_4:
                                     for x_4 in gen_4:
                                         assert x_4 is None, \
@@ -744,7 +773,6 @@ def post_process_pattern_scope_6(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def knows_rest_variable(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -776,7 +804,6 @@ def knows_rest_variable(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def knows_rest_match(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -807,7 +834,6 @@ def knows_rest_match(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def post_process_rest_match_1(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -832,7 +858,6 @@ def post_process_rest_match_1(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def post_process_rest_match_4_5(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -866,7 +891,6 @@ def post_process_rest_match_4_5(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def post_process_rest_match_correct(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
     patterns = rule.goal_arg_patterns()
@@ -885,7 +909,6 @@ def post_process_rest_match_correct(rule, arg_patterns, arg_context):
                 rule.rule_base.num_bc_rule_failures += 1
         finally:
             context.done()
-
 
 def knows_tuple_patterns(rule, arg_patterns, arg_context):
     engine = rule.rule_base.engine
@@ -917,7 +940,6 @@ def knows_tuple_patterns(rule, arg_patterns, arg_context):
         finally:
             context.done()
 
-
 def populate(engine):
     This_rule_base = engine.get_create('pattern_matching')
 
@@ -933,7 +955,7 @@ def populate(engine):
                     (),
                     ())
 
-    bc_rule.bc_rule('knows_pat_master', This_rule_base, 'knows_pat_master',
+    bc_rule.bc_rule('knows_pat_master', This_rule_base, 'knows_pattern_matching',
                     knows_pat_master, None,
                     (),
                     (),
@@ -944,6 +966,12 @@ def populate(engine):
                     (),
                     (),
                     ())
+
+    bc_rule.bc_rule('taught_pattern_matching_1_2_4_16', This_rule_base, 'taught_pattern_matching',
+                    taught_pattern_matching_1_2_4_16, None,
+                    (),
+                    (),
+                    (contexts.variable('ans'),))
 
     bc_rule.bc_rule('taught_pattern_matching_3_5_6_9_15', This_rule_base, 'taught_pattern_matching',
                     taught_pattern_matching_3_5_6_9_15, None,
@@ -1128,94 +1156,101 @@ Krb_lineno_map = (
     ((89, 93), (57, 57)),
     ((95, 100), (59, 59)),
     ((101, 106), (60, 60)),
-    ((119, 123), (73, 73)),
-    ((125, 130), (75, 75)),
-    ((131, 131), (76, 76)),
-    ((132, 137), (77, 77)),
-    ((150, 154), (80, 80)),
-    ((156, 161), (82, 82)),
-    ((162, 162), (83, 83)),
-    ((163, 168), (84, 84)),
-    ((181, 185), (87, 87)),
-    ((187, 192), (89, 89)),
-    ((193, 193), (90, 90)),
-    ((194, 199), (91, 91)),
-    ((212, 216), (94, 94)),
-    ((218, 223), (96, 96)),
-    ((224, 224), (97, 97)),
-    ((225, 230), (98, 98)),
-    ((231, 236), (99, 99)),
-    ((249, 253), (102, 102)),
-    ((255, 260), (104, 104)),
-    ((273, 277), (108, 108)),
-    ((279, 284), (110, 110)),
-    ((297, 301), (113, 113)),
-    ((303, 303), (115, 115)),
-    ((316, 320), (118, 118)),
-    ((322, 327), (120, 120)),
-    ((328, 333), (121, 121)),
-    ((334, 339), (122, 122)),
-    ((352, 356), (125, 125)),
-    ((358, 364), (127, 127)),
-    ((377, 381), (130, 130)),
-    ((383, 388), (132, 132)),
-    ((389, 394), (133, 133)),
-    ((407, 411), (136, 136)),
-    ((413, 413), (138, 138)),
-    ((414, 414), (139, 139)),
-    ((415, 421), (140, 140)),
-    ((434, 438), (143, 143)),
-    ((440, 445), (145, 145)),
-    ((446, 451), (146, 146)),
-    ((464, 468), (149, 149)),
-    ((470, 476), (151, 151)),
-    ((477, 482), (152, 152)),
-    ((483, 489), (153, 153)),
-    ((502, 506), (156, 156)),
-    ((508, 513), (158, 158)),
-    ((514, 519), (159, 159)),
-    ((520, 526), (160, 160)),
-    ((539, 543), (163, 163)),
-    ((545, 550), (165, 165)),
-    ((551, 556), (166, 166)),
-    ((557, 557), (167, 167)),
-    ((558, 563), (168, 168)),
-    ((576, 580), (171, 171)),
-    ((582, 587), (173, 173)),
-    ((588, 588), (174, 174)),
-    ((589, 594), (175, 175)),
-    ((607, 611), (178, 178)),
-    ((625, 629), (181, 181)),
-    ((631, 636), (183, 183)),
-    ((637, 642), (184, 184)),
-    ((643, 643), (185, 185)),
-    ((644, 649), (186, 186)),
-    ((662, 666), (189, 189)),
-    ((668, 673), (191, 191)),
-    ((674, 674), (192, 192)),
-    ((675, 680), (193, 193)),
-    ((693, 697), (196, 196)),
-    ((699, 704), (198, 198)),
-    ((705, 710), (199, 199)),
-    ((711, 711), (200, 200)),
-    ((712, 717), (201, 201)),
-    ((730, 734), (204, 204)),
-    ((736, 741), (206, 206)),
-    ((742, 747), (207, 207)),
-    ((760, 764), (210, 210)),
-    ((766, 771), (212, 212)),
-    ((772, 777), (213, 213)),
-    ((790, 794), (216, 216)),
-    ((796, 796), (218, 218)),
-    ((797, 802), (219, 219)),
-    ((815, 819), (222, 222)),
-    ((821, 821), (224, 224)),
-    ((822, 827), (225, 225)),
-    ((828, 828), (226, 226)),
-    ((829, 834), (227, 227)),
-    ((847, 851), (230, 230)),
-    ((853, 853), (232, 232)),
-    ((866, 870), (235, 235)),
-    ((872, 877), (237, 237)),
-    ((878, 883), (238, 238)),
+    ((119, 123), (63, 63)),
+    ((125, 130), (65, 65)),
+    ((131, 131), (66, 66)),
+    ((132, 137), (67, 67)),
+    ((138, 143), (68, 68)),
+    ((144, 149), (69, 69)),
+    ((150, 155), (70, 70)),
+    ((168, 172), (73, 73)),
+    ((174, 179), (75, 75)),
+    ((180, 180), (76, 76)),
+    ((181, 186), (77, 77)),
+    ((199, 203), (80, 80)),
+    ((205, 210), (82, 82)),
+    ((211, 211), (83, 83)),
+    ((212, 217), (84, 84)),
+    ((230, 234), (87, 87)),
+    ((236, 241), (89, 89)),
+    ((242, 242), (90, 90)),
+    ((243, 248), (91, 91)),
+    ((261, 265), (94, 94)),
+    ((267, 272), (96, 96)),
+    ((273, 273), (97, 97)),
+    ((274, 279), (98, 98)),
+    ((280, 285), (99, 99)),
+    ((298, 302), (102, 102)),
+    ((304, 309), (104, 104)),
+    ((322, 326), (108, 108)),
+    ((328, 333), (110, 110)),
+    ((346, 350), (113, 113)),
+    ((352, 352), (115, 115)),
+    ((365, 369), (118, 118)),
+    ((371, 376), (120, 120)),
+    ((377, 382), (121, 121)),
+    ((383, 388), (122, 122)),
+    ((401, 405), (125, 125)),
+    ((407, 413), (127, 127)),
+    ((426, 430), (130, 130)),
+    ((432, 437), (132, 132)),
+    ((438, 443), (133, 133)),
+    ((456, 460), (136, 136)),
+    ((462, 462), (138, 138)),
+    ((463, 463), (139, 139)),
+    ((464, 470), (140, 140)),
+    ((483, 487), (143, 143)),
+    ((489, 494), (145, 145)),
+    ((495, 500), (146, 146)),
+    ((513, 517), (149, 149)),
+    ((519, 525), (151, 151)),
+    ((526, 531), (152, 152)),
+    ((532, 538), (153, 153)),
+    ((551, 555), (156, 156)),
+    ((557, 562), (158, 158)),
+    ((563, 568), (159, 159)),
+    ((569, 575), (160, 160)),
+    ((588, 592), (163, 163)),
+    ((594, 599), (165, 165)),
+    ((600, 605), (166, 166)),
+    ((606, 606), (167, 167)),
+    ((607, 612), (168, 168)),
+    ((625, 629), (171, 171)),
+    ((631, 636), (173, 173)),
+    ((637, 637), (174, 174)),
+    ((638, 643), (175, 175)),
+    ((656, 660), (178, 178)),
+    ((674, 678), (181, 181)),
+    ((680, 685), (183, 183)),
+    ((686, 691), (184, 184)),
+    ((692, 692), (185, 185)),
+    ((693, 698), (186, 186)),
+    ((711, 715), (189, 189)),
+    ((717, 722), (191, 191)),
+    ((723, 723), (192, 192)),
+    ((724, 729), (193, 193)),
+    ((742, 746), (196, 196)),
+    ((748, 753), (198, 198)),
+    ((754, 759), (199, 199)),
+    ((760, 760), (200, 200)),
+    ((761, 766), (201, 201)),
+    ((779, 783), (204, 204)),
+    ((785, 790), (206, 206)),
+    ((791, 796), (207, 207)),
+    ((809, 813), (210, 210)),
+    ((815, 820), (212, 212)),
+    ((821, 826), (213, 213)),
+    ((839, 843), (216, 216)),
+    ((845, 845), (218, 218)),
+    ((846, 851), (219, 219)),
+    ((864, 868), (222, 222)),
+    ((870, 870), (224, 224)),
+    ((871, 876), (225, 225)),
+    ((877, 877), (226, 226)),
+    ((878, 883), (227, 227)),
+    ((896, 900), (230, 230)),
+    ((902, 902), (232, 232)),
+    ((915, 919), (235, 235)),
+    ((921, 926), (237, 237)),
+    ((927, 932), (238, 238)),
 )

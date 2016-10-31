@@ -15,8 +15,8 @@ collect_siblings
 collect_cousins
     foreach
         family.child_of($child, $father, $mother)
-
-        python cousins = []
+        python
+            cousins = []
         forall
             family.siblings_of($father, $father_siblings)            
             forall

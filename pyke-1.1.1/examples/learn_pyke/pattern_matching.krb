@@ -49,7 +49,7 @@ knows_pattern_matching_2
         learned_pattern_matching()
 
 knows_pat_master
-    use knows_pat_master()
+    use knows_pattern_matching()
     when
         questions.pat_master(13)
 
@@ -59,15 +59,15 @@ learned_pattern_matching
         taught_pattern_matching()
         knows_pattern_matching()
 
-#taught_pattern_matching_1_2_4_16
-#    use taught_pattern_matching()
-#    when
-#        questions.pat_master($ans)
-#        check $ans in (1, 2, 4, 16)
-#        knows_pattern_variable_syntax()
-#        knows_patterns()
-#        knows_how_patterns_match()
-#        knows_pattern_variable_scope()
+taught_pattern_matching_1_2_4_16
+    use taught_pattern_matching()
+    when
+        questions.pat_master($ans)
+        check $ans in (1, 2, 4, 16)
+        knows_pattern_variable_syntax()
+        knows_patterns()
+        knows_how_patterns_match()
+        knows_pattern_variable_scope()
 
 taught_pattern_matching_3_5_6_9_15
     use taught_pattern_matching()

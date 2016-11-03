@@ -1,9 +1,10 @@
 # Forward chaining based relations between facts
 
 ask_for_custom_pizza
-    assert fact.user_type(custom)
+    foreach
+        fact.type($type)
     assert
-        fact.pizza($user_type, $user_size, $user_crust, $user_sauce, $user_cheese, $user_toppings)
+        fact.pizza(custom, $user_size, $user_crust, $user_sauce, $user_cheese, $user_toppings)
 
 
 ask_size

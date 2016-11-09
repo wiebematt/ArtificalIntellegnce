@@ -1,56 +1,58 @@
-from pyke import knowledge_engine, ask_tty, goal
+from pyke import knowledge_engine, ask_tty
 
 engine = knowledge_engine.engine(__file__)
 engine.ask_module = ask_tty
+order = {}
 
-
-# def run():
-#     engine.reset()
-#     try:
-#         engine.activate('relation')
-#         result = engine.prove_1_goal('relation.ask_for_pizza()')
-#         print result
-#     except StandardError:
-#         krb_traceback.print_exc()
-#         sys.exit(1)
-#
-# run()
 
 def option_display(param):
-    return tuple(map((lambda x: (x, unicode(x).capitalize())), param))
+    return tuple(map((lambda x: (x, unicode(x).capitalize().replace("_", " "))), param))
 
 
-def get_all_fact(goalstr, value, veggie=False):
+def get_all_fact(goalstr, value):
     with engine.prove_goal(goalstr) as gen:
-        result = filter(lambda x: x["veggie"] == "veg", [var for var, plan in gen]) if veggie else \
-            [var for var, plan in gen]
-        return map(lambda x: x[value], result)
+        return map(lambda x: x[value], [var for var, plan in gen])
 
 
-def ask_question(function, field, veggie):
-    return function("What " + field + " would you like?",
-                    option_display(get_all_fact("fact." + field + "($" + field + ", $veggie)", field, veggie)))
+def ask_question(function, field):
+    return function("What " + field + " would you like? (Please enter all options separated by a comma)",
+                    option_display(get_all_fact("fact." + field + "($" + field + ")", field)))
 
 
 def make_pizza():
+    order["pizza"] = {}
     veggie = ask_tty.ask_yn("Would you like a vegetarian pizza?")
-    size = ask_question(ask_tty.ask_select_1, "size", False)
-    crust = ask_question(ask_tty.ask_select_1, "crust", veggie)
-    sauce = ask_question(ask_tty.ask_select_1, "sauce", veggie)
-    cheese = ask_question(ask_tty.ask_select_1, "cheese", veggie)
-    toppings = ask_question(ask_tty.ask_select_n, "toppings", veggie)
-    engine.prove_goal(
-        "fact.pizza(custom, $" + size + ", $" + crust + ", $" + sauce + ", $" + cheese + ", $" + toppings + ", $" + veggie)
+    order["pizza"]["size"] = ask_question(ask_tty.ask_select_1, "size")
+    order["pizza"]["crust"] = ask_question(ask_tty.ask_select_1, "crust")
+    order["pizza"]["sauce"] = ask_question(ask_tty.ask_select_1, "sauce")
+    order["pizza"]["cheese"] = ask_question(ask_tty.ask_select_1, "cheese")
+    order["pizza"]["vegetarian_toppings"] = ask_question(ask_tty.ask_select_n, "vegetarian_toppings")
+    if not veggie:
+        order["pizza"]["meat_toppings"] = ask_question(ask_tty.ask_select_n, "meat_toppings")
 
 
 def make_soup():
-    print "Really? Not Pizza?!?"
+    soup = ask_question(ask_tty.ask_select_1, "soup")
+    order["soup"] = soup
+    engine.add_case_specific_fact("fact", "order_complete", ())
 
 
 def activate_pizzabot():
-    engine.reset()
     food = ask_question(ask_tty.ask_select_1, "food")
-    if food == "Pizza":
+    if food == "pizza":
+        engine.add_case_specific_fact("fact", "order_pizza", ())
         make_pizza()
-    elif food == "Soup":
-        make_soup()
+    elif food == "soup":
+        engine.add_case_specific_fact("fact", "order_soup", ())
+        # make_soup()
+
+
+def main():
+    engine.reset()
+    engine.activate("relation")
+    engine.assert_("fact", "order_start", ())
+    # activate_pizzabot()
+    # return order
+
+
+print main()

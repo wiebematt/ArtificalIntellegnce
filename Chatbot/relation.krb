@@ -1,22 +1,16 @@
 # Forward chaining based relations between facts
-# verify pizza
-# pizzacontains(pep, topping)
 
 ask_for_food
-    use ask_for_food
-    when
-
-ask_veggie
-
-ask_for_pizza_veg
     foreach
-        fact.type($type)
-        fact.size($size)
-        fact.crust($crust)
-        fact.sauce($sauce, $vegetarian)
-        check $vegetarian != non-veg
-        fact.cheese($cheese)
-        fact.topping((($name, $veg), )
+        fact.order_start()
     assert
-        fact.pizza($type, $size, $crust, $sauce, (*$_), $vegetarian)
+        python
+            import kb2text
+            kb2text.activate_pizzabot()
+
+ask_for_soup
+    foreach
+        fact.order_soup()
+    assert
+        python print "order soup"
 

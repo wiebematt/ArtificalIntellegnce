@@ -1,0 +1,95 @@
+ask_food($ans)
+    What food would you like?
+    ---
+    $ans = select_1
+        1: Pizza
+        2: Soup
+
+ask_soup($ans)
+    What soup(s) would you like?
+    ---
+    $ans = select_n
+        1: Clam Chowder
+        2: Tomato Bisque
+        3: Beef Barley
+
+ask_pizza_type($ans)
+    Would you like a premade pizza or make your own?
+    ---
+    $ans = select_1
+        1: Premade
+        2: Custom
+
+ask_pizza_premade($ans)
+    What pizza(s) would you like?
+    ---
+    $ans = select_n
+        1: Hawaiian
+        2: Pepperoni
+        3: Texas Chainsaw Slaughterhouse
+        4: Vegan option (compost)
+
+ask_pizza_size($ans)
+    What size would you like?
+    ---
+    $ans = select_1
+        1: small
+        2: medium
+        3: large
+        4: American
+
+ask_pizza_crust($ans)
+    What crust would you like?
+    ---
+    $ans = select_1
+        1: normal
+        2: gluten-free
+
+ask_pizza_sauce($ans)
+    What sauce would you like?
+    ---
+    $ans = select_1
+        1: tomato
+        2: no_sauce
+        3: oil
+        4: pesto
+        5: alfredo
+
+ask_pizza_cheese($ans)
+    What cheese would you like?
+    ---
+    $ans = select_1
+        1: no_cheese
+        2: parmesan
+        3: mozzarella
+        4: feta
+        5: asiago
+
+ask_pizza_veggie($ans)
+    Would you like a vegetarian pizza?
+    ---
+    $ans = yn
+
+ask_pizza_veggie_topping($ans)
+    What veggie toppings would you like?
+    ---
+    $ans = select_n
+        1: no_toppings
+        2: tomato
+        3: spinach
+        4: onion
+        5: red_onion
+        6: red_pepper
+        7: green_pepper
+
+ask_pizza_meat_topping($ans)
+    What meat toppings would you like?
+    ---
+    $ans = select_n
+        1: no_toppings
+        2: pepperoni
+        3: italian_sausage
+        4: steak
+        5: bacon
+        6: BBQ_chicken
+        7: chorizo

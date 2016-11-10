@@ -1,16 +1,74 @@
 # Forward chaining based relations between facts
 
-ask_for_food
+ask_for_pizza
     foreach
-        fact.order_start()
+        fact.order_pizza()
     assert
         python
             import kb2text
-            kb2text.activate_pizzabot()
+            kb2text.make_pizza()
+
+ask_size
+    foreach
+        fact.ordered_custom()
+    assert
+        python
+            import kb2text
+            kb2text.ask_for("size")
+
+ask_crust
+    foreach
+        fact.ordered_size()
+    assert
+        python
+            import kb2text
+            kb2text.ask_for("crust")
+
+ask_sauce
+    foreach
+        fact.ordered_crust()
+    assert
+        python
+            import kb2text
+            kb2text.ask_for("sauce")
+
+ask_cheese
+    foreach
+        fact.ordered_sauce()
+    assert
+        python
+            import kb2text
+            kb2text.ask_for("cheese")
+
+ask_veggie_toppings
+    foreach
+        fact.ordered_cheese()
+    assert
+        python
+            from pyke import ask_tty
+            import kb2text
+            kb2text.ask_for_toppings("vegetarian_toppings")
+
+ask_all_toppings
+    foreach
+        fact.ordered_non_veggie()
+        fact.ordered_vegetarian_toppings()
+    assert
+        python
+            from pyke import ask_tty
+            import kb2text
+            kb2text.ask_for_toppings("meat_toppings")
+
+ask_premade
+    foreach
+        fact.ordered_premade()
+    assert
+        python import kb2text
+        kb2text.premade_pizza()
 
 ask_for_soup
     foreach
         fact.order_soup()
     assert
-        python print "order soup"
-
+        python import kb2text
+        kb2text.make_soup()

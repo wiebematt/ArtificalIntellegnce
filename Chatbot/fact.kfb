@@ -7,8 +7,8 @@
 # fact.size(size)
 # fact.pizza(type, size, crust, sauce, cheese, vegetarian_toppings, meat_toppings)
 
-type(premade)
-type(custom)
+type_of_pizza(premade)
+type_of_pizza(custom)
 
 size(small)
 size(medium)
@@ -45,6 +45,7 @@ meat_toppings(steak)
 meat_toppings(bacon)
 meat_toppings(BBQ_chicken)
 meat_toppings(chorizo)
+meat_toppings(CoolTopping)
 
 veggie(True)
 veggie(False)
@@ -54,3 +55,7 @@ food(pizza)
 
 soup(Clam_Chowder)
 soup(Tomato_Bisque)
+
+premade_pizza(Meatza)
+premade_pizza(Pepperoni)
+premade_pizza(Supreme)

@@ -24,7 +24,8 @@ to the runchatbot for final processing and printing.
 ## Question 4
 
 The only thing that I have to do is simply add CoolTopping to the fact base (fact.kfb) with the appropriate tag e.g.
-meat_toppings(CoolTopping).
+meat_toppings(CoolTopping). If the topping tag does not exist then there would need to be an additional python method
+to handle when this topping could be added.
 
 ## Question 5
 
@@ -34,6 +35,11 @@ Then you would need to create a chain of rules in the rules base to handle the s
 e.g. ask_for_soup.
 Then you would need to modify the kb2text.py file, specifically the activate_pizzabot method in order to handle the
 new answer and asserting the new facts into the fact base to trigger the new rules.
+Then simply add the soup(your_opinion_here) to the fact base.
 
+NOTES:
+This program does not use pizzabot.py. It simply runs the runchatbot.py and kb2text.py takes it from there,
+relying more on the ask_tty module in pyke to handle user interaction. The kb2text use the fact and rules bases
+to guide the execution of code and the kb2text is primarily there to ask for and handle user responses.
 Unfortunately, in this case, even though it was working initially working with switching between soup and pizza,
 for whatever reason it is now no longer recognizing the new fact inserted and simply exiting the chat.

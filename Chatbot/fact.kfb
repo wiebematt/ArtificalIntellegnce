@@ -55,6 +55,7 @@ food(pizza)
 
 soup(Clam_Chowder)
 soup(Tomato_Bisque)
+soup(Beef_Barley)
 
 premade_pizza(Meatza)
 premade_pizza(Pepperoni)

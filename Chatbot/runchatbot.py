@@ -59,6 +59,9 @@ def main():
         while chat_in_progress:
             chat_in_progress = validate_order(kb2text.main())
         print("// Chat should now be considered complete")
+        # used to avoid continually looping
+        if not chat_in_progress:
+            break
 
 if __name__ == '__main__':
     main()

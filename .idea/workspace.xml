@@ -1,12 +1,447 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3eaa9ae-6bd9-4a74-bdcd-e27c9b8f6e70" name="Default" comment="Hacky solution with soup but pizza is working.">
+    <list default="true" id="d3eaa9ae-6bd9-4a74-bdcd-e27c9b8f6e70" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.hgignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.hgtags" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.idea/pyke-1.1.1.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/RELEASE_NOTES-1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/RELEASE_NOTES-pre1.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/CanNotProve.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/CanNotProve2.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/facts.kfb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/rules.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/CanNotProve/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/Misc/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/Misc/generator_close.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/Misc/generator_exception_propagation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/Misc/generator_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/backup/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/backup/backup.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/backup/backup.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/backup/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/family_relations.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/findall.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/forall.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/knapsack.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/learn_pyke.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/notany.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/towers_of_hanoi.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/examples/web_framework.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/first/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/first/family.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/first/test.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/first/test.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/pyketest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/Test/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/ask_tty.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/ask_wx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/bc_rule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/condensedPrint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/contexts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/fact_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/fc_rule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/goal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/immutable_dict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/knowledge_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/knowledge_engine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/compiler.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/compiler_bc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/kfbparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/kfbparser_tables.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/kqb_parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/krbparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/krbparser_tables.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/README.pyke" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/lex.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/ply/yacc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/scanner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_compiler/scanner_tables.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/krb_traceback.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/pattern.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/qa_helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/question_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/rule_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/special.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/target_pkg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/unique.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/build/lib/pyke/user_question.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/PyKE.mm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/ast_syntax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/backups" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/css_help" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/pyke.filemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/pyke.splicemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/shamap.hg_order" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/from_svn/shamap.svn_order" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/link_and_spell_checks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/making_a_release" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/r2w_restindex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/r2w_std_funs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/r2w_values" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/rest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/rest2web" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/sf_hg_access" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/cheatsheets/web.upload" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/bc_related.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/bc_related0.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/error_test.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/family1.kfb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/family2.kfb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/fc_related.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/plan_example.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/some_module.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/examples/user_questions.kqb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/PyCon2008-paper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/cooking_functions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/installing_pyke.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/modifying_pyke.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/steps_to_using_pyke.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/about_pyke/what_is_pyke.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/examples.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/google45f8c2316aa06307.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/bc_rules2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/bc_rules5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/bc_rules8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/bc_rules9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client2b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client2d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3f2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/PyCon2008/client3h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/backtracking.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/backtracking.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/bc_backtracking.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/bc_backtracking.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/bc_rules.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/bc_rules.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/header.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan1.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan2.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan3.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/plan3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/rule_base_categories.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/images/rule_base_categories.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/fact_bases.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/question_bases.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/rule_bases.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/knowledge_bases/special.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/literal_patterns.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/matching_patterns.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/pathological_answer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/pattern_variables.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/pattern_matching/tuple_patterns.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/plans.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/rules/backward_chaining.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/rules/forward_chaining.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/rules/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/logic_programming/statements.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/kfb_syntax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/kqb_syntax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/bc_rule.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/compound_premise.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/fc_rule.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/pattern.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/pyke_syntax/krb_syntax/python_premise.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/sitemap.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/stylesheets/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/stylesheets/pyke.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/stylesheets/pysrc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/stylesheets/rest.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/adding_facts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/creating_engine.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/other_functions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/html/using_pyke/proving_goals.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/r2w.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/PyCon2008-paper.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/cooking_functions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/installing_pyke.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/modifying_pyke.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/steps_to_using_pyke.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/about_pyke/what_is_pyke.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/add_links" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/gather_links" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/gather_links.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/gen_html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/get_links.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/make_sitemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/bin/strip_links" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/copyright_license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/examples.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/bc_rules2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/bc_rules5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/bc_rules8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/bc_rules9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client2b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client2d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3f2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/PyCon2008/client3h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/backtracking.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/backtracking.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/bc_backtracking.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/bc_backtracking.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/bc_rules.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/bc_rules.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/header.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan1.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan2.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan3.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/plan3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/rule_base_categories.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/images/rule_base_categories.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/fact_bases.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/links" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/question_bases.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/rule_bases.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/knowledge_bases/special.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/links" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/literal_patterns.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/matching_patterns.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/pathological_answer.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/pattern_variables.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/pattern_matching/tuple_patterns.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/plans.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/rules/backward_chaining.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/rules/forward_chaining.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/rules/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/logic_programming/statements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/kfb_syntax.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/kqb_syntax.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/bc_rule.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/compound_premise.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/fc_rule.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/pattern.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/krb_syntax/python_premise.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/pyke_syntax/links" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/template.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/adding_facts.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/creating_engine.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/index.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/other_functions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/source/using_pyke/proving_goals.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/syntax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/doc/todo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/bc2_example.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/bc_example.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/bc2_example_bc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/bc_example_bc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/compiled_pyke_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/example_bc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/example_fc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/example_plans.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/family.fbc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/compiled_krb/fc_example_fc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/example.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/family.kfb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/family_relations/fc_example.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/bc_findall.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/family.kfb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/findall/fc_findall.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/bc_forall.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/bc_forall_bc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/compiled_pyke_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/family.fbc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/compiled_krb/fc_forall_fc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/family.kfb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/forall/fc_forall.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/compiled_krb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/compiled_krb/compiled_pyke_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/compiled_krb/knapsack_bc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/knapsack.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/knapsack/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/compiled_krb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/compiled_krb/compiled_pyke_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/compiled_krb/pattern_matching_bc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/compiled_krb/questions.qbc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/pattern_matching.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/question order.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/questions.kqb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/testall.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/bc_notany.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/family.kfb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/notany/fc_notany.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/Schema.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/Schema.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/catalog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/create_database.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/create_tables.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/create_tables.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/database.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/director.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/driver_sqlite3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/drop_tables.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/genre.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/load_mysql_schema.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/load_sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/load_sqlite3_schema.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/load_tables" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/movie.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/movie_director_link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/sqlite3.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/sqlgen/testall.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/testall.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/driver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/towers2.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/towers_of_hanoi/towers_of_hanoi.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/development.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/siege.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/siege.urls.tg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/controllers/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/controllers/root.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/model/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/templates/movie.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/TurboGears2/tg2movie/templates/movie2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/director.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/movie.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/movie2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/preforked_server.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/profile_server.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/siege.urls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/simple_server.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/testall.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/web.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/examples/web_framework/wsgi_app.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/experimental/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/experimental/cache_args.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/experimental/form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/experimental/metaclass.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/experimental/multi_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/experimental/testall.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/hgrc_keywords" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/make_doc_tarball" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/make_release" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/ask_tty.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/ask_wx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/bc_rule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/condensedPrint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/contexts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/fact_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/fc_rule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/goal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/immutable_dict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/knowledge_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/knowledge_engine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/TEST/kfbparse_test.kfb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/TEST/krbparse_test.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/TEST/scan_test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/compiler.krb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/compiler_bc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/generated_files.tst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/kfbparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/kfbparser_tables.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/kqb_parser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/krbparser.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/krbparser_tables.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/README.pyke" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/lex.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/ply/yacc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/scanner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/scanner_tables.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_compiler/testall.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/krb_traceback.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/pattern.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/qa_helpers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/question_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/rule_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/special.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/target_pkg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/unique.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/pyke/user_question.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyke-1.1.1/testpyke" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/fact.kfb" afterPath="$PROJECT_DIR$/Chatbot/fact.kfb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/kb2text.py" afterPath="$PROJECT_DIR$/Chatbot/kb2text.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/readme.txt" afterPath="$PROJECT_DIR$/Chatbot/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/relation.krb" afterPath="$PROJECT_DIR$/Chatbot/relation.krb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chatbot/runchatbot.py" afterPath="$PROJECT_DIR$/Chatbot/runchatbot.py" />
     </list>
     <ignored path="ArtificalIntellegnce.iws" />
@@ -20,7 +455,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ArtificalIntellegnce$runchatbot.coverage" NAME="runchatbot Coverage Results" MODIFIED="1478751189135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chatbot" />
+    <SUITE FILE_PATH="coverage/ArtificalIntellegnce$runchatbot.coverage" NAME="runchatbot Coverage Results" MODIFIED="1478816315281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chatbot" />
     <SUITE FILE_PATH="coverage/ArtificalIntellegnce$test.coverage" NAME="test Coverage Results" MODIFIED="1473987368404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ArtificalIntellegnce$kb2text.coverage" NAME="kb2text Coverage Results" MODIFIED="1478732355314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Chatbot" />
     <SUITE FILE_PATH="coverage/ArtificalIntellegnce$pacman.coverage" NAME="pacman Coverage Results" MODIFIED="1473722865790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
@@ -34,14 +469,14 @@
     <favorites_list name="ArtificalIntellegnce" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42974684">
+    <splitter split-orientation="horizontal" split-proportion="0.4602564">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
           <file leaf-file-name="fact.kfb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Chatbot/fact.kfb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="438">
-                  <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+                <state relative-caret-position="728">
+                  <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -57,10 +492,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="relation.krb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="relation.krb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Chatbot/relation.krb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
+                <state relative-caret-position="709">
                   <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="12" />
                   <folding />
                 </state>
@@ -77,11 +512,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="runchatbot.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="runchatbot.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Chatbot/runchatbot.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+                <state relative-caret-position="435">
+                  <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#14#0" expanded="true" />
                   </folding>
@@ -93,20 +528,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-          <file leaf-file-name="pattern_matching.krb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/pyke-1.1.1/examples/learn_pyke/pattern_matching.krb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="867">
-                  <caret line="51" column="24" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="kb2text.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Chatbot/kb2text.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
+                <state relative-caret-position="1105">
                   <caret line="65" column="21" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="21" />
                   <folding />
                 </state>
@@ -116,8 +541,8 @@
           <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Chatbot/readme.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="438">
-                  <caret line="38" column="102" selection-start-line="38" selection-start-column="102" selection-end-line="38" selection-end-column="102" />
+                <state relative-caret-position="459">
+                  <caret line="42" column="103" selection-start-line="42" selection-start-column="103" selection-end-line="42" selection-end-column="103" />
                   <folding />
                 </state>
               </provider>
@@ -165,8 +590,8 @@
         <option value="$PROJECT_DIR$/Chatbot/compiled_krb/relation_fc.py" />
         <option value="$PROJECT_DIR$/Chatbot/relation.krb" />
         <option value="$PROJECT_DIR$/Chatbot/kb2text.py" />
-        <option value="$PROJECT_DIR$/Chatbot/runchatbot.py" />
         <option value="$PROJECT_DIR$/Chatbot/fact.kfb" />
+        <option value="$PROJECT_DIR$/Chatbot/runchatbot.py" />
         <option value="$PROJECT_DIR$/Chatbot/readme.txt" />
       </list>
     </option>
@@ -209,6 +634,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,45 +663,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pyke-1.1.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArtificalIntellegnce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArtificalIntellegnce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pyke-1.1.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pyke" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArtificalIntellegnce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArtificalIntellegnce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Chatbot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -586,24 +979,31 @@
       <option name="project" value="LOCAL" />
       <updated>1477594028602</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="finish writeup tomorrow">
+      <created>1478755414088</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1478755414088</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15778251" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33124128" sideWeight="0.5019355" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49870968" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33261105" sideWeight="0.49806452" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33261105" sideWeight="0.49806452" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31744313" sideWeight="0.49806452" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4582882" sideWeight="0.49870297" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4582882" sideWeight="0.49870297" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -669,7 +1069,8 @@
     <MESSAGE value="preliminary work on chatbot" />
     <MESSAGE value="should have most of the interaction done" />
     <MESSAGE value="sync point" />
-    <option name="LAST_COMMIT_MESSAGE" value="sync point" />
+    <MESSAGE value="finish writeup tomorrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish writeup tomorrow" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -989,7 +1390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,7 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="34" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +1404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,7 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="158" column="0" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,6 +1418,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/relation.krb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/kb2text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chatbot/fact.kfb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1035,42 +1455,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chatbot/runchatbot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+        <state relative-caret-position="435">
+          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/fact.kfb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/relation.krb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chatbot/kb2text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="65" column="21" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chatbot/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="38" column="102" selection-start-line="38" selection-start-column="102" selection-end-line="38" selection-end-column="102" />
+        <state relative-caret-position="459">
+          <caret line="42" column="103" selection-start-line="42" selection-start-column="103" selection-end-line="42" selection-end-column="103" />
           <folding />
         </state>
       </provider>

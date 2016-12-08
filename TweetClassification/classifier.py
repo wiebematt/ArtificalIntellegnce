@@ -1,6 +1,7 @@
 # Functions to develop:
 import sys
-import numpy as np
+from collections import Counter
+from sklearn.feature_extraction.text import CountVectorizer
 from random import randint
 from stopwords import STOPWORDS
 import os
@@ -14,14 +15,8 @@ SMOOTHING_FACTOR = 1
 SEPARATOR = ","
 CLASS_HRC = "HillaryClinton"
 CLASS_DJT = "realDonaldTrump"
-
-
-# class LearningClass:
-#     def __init__(self, tweet_class, prior, word_count, dictionary):
-#         self.tweet_class = tweet_class
-#         self.prior = prior
-#         self.word_count = word_count
-#         self.dict = dictionary
+HRC_INDEX = 0
+DJT_INDEX = 1
 
 
 def read_data(file_name):
@@ -33,95 +28,42 @@ def read_data(file_name):
         for line in csv.DictReader(csvfile, fieldnames):
             corpus.append((line['handle'], line['text']))
     print "Read " + str(len(corpus)) + " tweets"
-    return cleanup(corpus)
+    return corpus
 
 
-def compute_tf(examples):
-    tf_data = []
-    word_doc_count = {}
-    for tweet in examples:
-        features = tweet.split(",")
-        term_freq_per_tweet = {}
-        # Counts the words in a tweet
-        for term in features:
-            if term in term_freq_per_tweet:
-                term_freq_per_tweet[term] += 1
-            else:
-                term_freq_per_tweet[term] = 1
-        # Counts the # of documents a word is in. Also normalizes the word counts
-        for x in term_freq_per_tweet:
-            if x in word_doc_count:
-                word_doc_count[x] += 1
-            else:
-                word_doc_count[x] = 1
-            term_freq_per_tweet[x] = 1 + np.math.log(term_freq_per_tweet[x])
-        tf_data.append(term_freq_per_tweet)
-    tf_data = reduce(merge_word_counts, tf_data, {})
-    return tf_data, word_doc_count
-
-
-def merge_word_counts(t1, t2):
-    for x in t1:
-        if x in t2:
-            t1[x] = t1[x] + t2[x]
-    for y in t2:
-        if y not in t1:
-            t1[y] = t2[y]
-    return t1
-
-
-def idf(target_dict, corpus_size, merged_counts):
-    for x in target_dict:
-        target_dict[x] *= np.math.log(1 + corpus_size / merged_counts[x])
-    return target_dict
-
-
-def normalize_training_data(hrc_examples, djt_examples):
-    print "Normalizing data"
-    corpus_size = len(hrc_examples) + len(djt_examples)
-    print "Computing TF"
-    hrc_dict, word_doc_count = compute_tf(hrc_examples)
-    djt_dict, word_doc_count2 = compute_tf(djt_examples)
-    merged_counts = merge_word_counts(word_doc_count, word_doc_count2)
-    print "Computing IDF"
-    return (CLASS_HRC, idf(hrc_dict, corpus_size, merged_counts)), \
-           (CLASS_DJT, idf(djt_dict, corpus_size, merged_counts))
+def cleanup_tweet(tweet):
+    line = re.sub(r'http\S+', '', tweet.strip().lower()).strip()
+    words = re.sub("[^a-zA-Z#@]", " ", line).split()
+    return filter(lambda x: x not in STOPWORDS and len(x) > 3, words)
 
 
 def cleanup(corpus):
     # This function will be responsible for cleaning up the input data. This cleanup includes removal of special
     # characters, stop words and performing normalization on the input text data. It will also be responsible for
     # converting the textual data into features. For this exercise we will use Bag Of Words based features.
+
     # training_set = open(TRAINING_FILE, 'w')
-    hrc_examples = []
-    djt_examples = []
+    # word_counts_per_class = {CLASS_DJT: 0, CLASS_HRC: 0}
     testing_set = open(TESTING_FILE, 'w')
-    count = 0
-    print "Separating Tweets by Class"
+    testing_set.write("handle,text\n")
+    testing_set_count = 0
+    training_list = []
+    print "Separating Tweets for Testing, Cleaning Tweets"
     for handle, tweet in corpus:
-        words = [j for i in map(lambda x: re.sub("[^a-zA-Z]", " ", x).strip().split(), tweet.strip().lower().split())
-                 for j in i]
-        valid_words_only = filter(lambda x: len(x) > 3, filter(lambda x: x not in STOPWORDS, words))
+        valid_words_only = cleanup_tweet(tweet)
         if randint(1, 10) <= K_FOLD_FACTOR:
-            count += 1
-            testing_set.write(handle + SEPARATOR + reduce(lambda x, y: x + SEPARATOR + y, valid_words_only) + "\n")
+            testing_set_count += 1
+            testing_set.write(handle + SEPARATOR + reduce(lambda x, y: x + " " + y, valid_words_only, "") + "\n")
         else:
-            # training_set.write(handle + SEPARATOR + reduce(lambda x, y: x + SEPARATOR + y, valid_words_only))
-            if handle == CLASS_HRC:
-                hrc_examples.append(reduce(lambda x, y: x + SEPARATOR + y, valid_words_only))
-            elif handle == CLASS_DJT:
-                djt_examples.append(reduce(lambda x, y: x + SEPARATOR + y, valid_words_only))
+            training_list.append((handle, valid_words_only))
     testing_set.close()
-    print "Sectioned {0} ({1}%) examples for testing".format(str(count), str(int(100.0 * count / len(corpus))))
-    for handle, training_class in normalize_training_data(hrc_examples, djt_examples):
-        training_writer = open("train_" + handle + ".txt", 'w')
-        for item in training_class:
-            training_writer.write(item + " " + str(training_class[item]) + "\n")
-        training_writer.close()
-        print "Wrote " + str(len(training_class)) + " words to " + "train_" + handle + ".txt"
+    # have priors, word count for each candidate
+    print "Sectioned {0} ({1}%) examples for testing".format(str(testing_set_count),
+                                                             str(int(100.0 * testing_set_count / len(corpus))))
+    return training_list
 
 
-def train():
+def train(training_list):
     # This function will compute the following probabilities:
     # p(class1), p(class2) ... p(classn): This represents the distribution of each class in your dataset, and the
     # probability of seeing the data from each class.
@@ -129,24 +71,87 @@ def train():
     # identify what you consider as a feature. Is your feature a single word, bigrams (2 words), or trigrams (3words)?
     # For this project it is acceptable to consider unigram features (each feature is one word)
     # p(feature1), p(feature2)...p(featuren): The individual probability of each feature.
-    # p(feature1|feature2): What is the probability that you would see feature1 given feature2? Do you really need to
-    # compute this? Do not compute it if you do not need this value.
+
     # Note: Please make sure that you use numpy arrays to store your feature probability values. Also make sure that
     # your representations are consistent with the input values required by Scikit-learn's Naive Bayes Implementation
-    trainer = np.array()
-    pass
+    print "Computing Class priors, Feature Priors, and Feature/Class Likelihood"
+    per_class_priors = Counter()
+    per_feature_priors = Counter()
+    vectorizer = CountVectorizer()
+    likelihood = {CLASS_HRC: Counter(), CLASS_DJT: Counter()}
+    for handle, tweet in training_list:
+        per_class_priors.update([handle])
+        tweet_counter = Counter(tweet)
+        per_feature_priors.update(tweet_counter)
+        likelihood[handle].update(tweet_counter)
+    feature_matrix = vectorizer.fit_transform([' '.join(x[1]) for x in training_list])
+    # Return Class Probabilities | Feature Probabilities | Sparse Matrix of Features | Training Classifications
+    return (prob_dict(per_class_priors), prob_dict(per_feature_priors),
+            {k: prob_dict(likelihood[k]) for k in likelihood}), (feature_matrix, [y[0] for y in training_list])
 
 
-def evaluation():
+def prob_dict(input_counter):
+    total = sum(input_counter.values(), 0.0)
+    return {k: v / total for k, v in input_counter.iteritems()}
+
+
+def compute_likelihoods(words, feature_likelihood):
+    result = 1
+    for word in words:
+        if word in feature_likelihood:
+            result *= feature_likelihood[word]
+        else:
+            result *= 1.0 / len(feature_likelihood)
+    return result
+
+
+def compute_recall_precision(y_true, y_pred, classifier):
+    count = 0.0
+    right = 0.0
+    for index, i in enumerate(y_true):
+        if i == classifier:
+            count += 1
+            if y_pred[index] == classifier:
+                right += 1
+    return right / count
+
+
+def compute_f1_score(recall, precision):
+    return 2 * precision * recall / (precision + recall)
+
+
+def evaluation(y_true, y_pred):
+    print "Starting Evaluation"
+    for classifier in (CLASS_HRC, CLASS_DJT):
+        recall = compute_recall_precision(y_true, y_pred, classifier)
+        precision = compute_recall_precision(y_pred, y_true, classifier)
+        f1_score = compute_f1_score(recall, precision)
+        print classifier + ":  Recall: {0}  Precision {1}  F1 Score {2}".format(recall, precision, f1_score)
+
+
+def predict(tweet_str, classifier_priors, all_feature_priors, feature_probabilities):
     # This function will compute the overall accuracy and the per class accuracy of your classifier. We require the
     # following metrics for accuracy computation:
-    pass
+    # print "Beginning Evaluation"
+    words = cleanup_tweet(tweet_str)
+    classification = []
+    for classifier in classifier_priors:
+        prob = classifier_priors[classifier] * compute_likelihoods(words, feature_probabilities[
+            classifier]) / compute_likelihoods(words, all_feature_priors)
+        classification.append((prob, classifier))
+    return sorted(classification, reverse=True)
 
 
-def predict():
-    # Given an input string, this function will return the list of classes it might belong to with decreasing
-    # probability
-    pass
+def test_naive_bayes(probability_components):
+    print "Beginning Testing"
+    y_true = []
+    y_pred = []
+    class_priors, feature_priors, feature_likelihoods = probability_components
+    for handle, tweet in read_data(TESTING_FILE):
+        y_true.append(handle)
+        predictions = predict(tweet, class_priors, feature_priors, feature_likelihoods)
+        y_pred.append(predictions[0][1])
+    return y_true, y_pred
 
 
 if __name__ == '__main__':
@@ -157,9 +162,11 @@ if __name__ == '__main__':
     # tweet_csv = sys.argv[1]
     tweet_csv = "tweets.csv"
     assert os.path.isfile(tweet_csv)
-    try:
-        read_data(tweet_csv)
-
-    finally:
-        # ready for user input
-        pass
+    # for_predict: dict(class, prob) | dict(word,prob) | dict(class, dict(word, prob)
+    # This variable is for the predict function
+    # for_scikit: sparse feature matrix | list[handles]
+    # This variable is for the scikit naive bayes
+    for_predict, for_scikit = train(cleanup(read_data(tweet_csv)))
+    print "Training Complete"
+    accuracy, testing_handles = test_naive_bayes(for_predict)
+    evaluation(accuracy, testing_handles)

@@ -1,7 +1,6 @@
 # Functions to develop:
 import sys
 from collections import Counter
-from sklearn.feature_extraction.text import CountVectorizer
 from random import randint
 from stopwords import STOPWORDS
 import os
@@ -20,6 +19,7 @@ DJT_INDEX = 1
 
 
 def read_data(file_name):
+    """ Reads in tweets from csv file """
     # This function will be responsible for reading an input file in csv format.
     corpus = []
     print "Reading file " + file_name
@@ -32,18 +32,17 @@ def read_data(file_name):
 
 
 def cleanup_tweet(tweet):
+    """ Cleans up tweet """
     line = re.sub(r'http\S+', '', tweet.strip().lower()).strip()
     words = re.sub("[^a-zA-Z#@]", " ", line).split()
     return filter(lambda x: x not in STOPWORDS and len(x) > 3, words)
 
 
 def cleanup(corpus):
+    """ Cleans up list of handle/tweets """
     # This function will be responsible for cleaning up the input data. This cleanup includes removal of special
     # characters, stop words and performing normalization on the input text data. It will also be responsible for
     # converting the textual data into features. For this exercise we will use Bag Of Words based features.
-
-    # training_set = open(TRAINING_FILE, 'w')
-    # word_counts_per_class = {CLASS_DJT: 0, CLASS_HRC: 0}
     testing_set = open(TESTING_FILE, 'w')
     testing_set.write("handle,text\n")
     testing_set_count = 0
@@ -64,6 +63,7 @@ def cleanup(corpus):
 
 
 def train(training_list):
+    """ Trains NB classifer. Returns 2 tuples, one for use in evaluation and one for scikit """
     # This function will compute the following probabilities:
     # p(class1), p(class2) ... p(classn): This represents the distribution of each class in your dataset, and the
     # probability of seeing the data from each class.
@@ -77,25 +77,29 @@ def train(training_list):
     print "Computing Class priors, Feature Priors, and Feature/Class Likelihood"
     per_class_priors = Counter()
     per_feature_priors = Counter()
-    vectorizer = CountVectorizer()
     likelihood = {CLASS_HRC: Counter(), CLASS_DJT: Counter()}
     for handle, tweet in training_list:
         per_class_priors.update([handle])
         tweet_counter = Counter(tweet)
         per_feature_priors.update(tweet_counter)
         likelihood[handle].update(tweet_counter)
-    feature_matrix = vectorizer.fit_transform([' '.join(x[1]) for x in training_list])
-    # Return Class Probabilities | Feature Probabilities | Sparse Matrix of Features | Training Classifications
+    target, feature_matrix = zip(*training_list)
+    # Return (Class Probabilities dict(class, prob) | Feature Probabilities dict(feature, prob) |
+    # Likelihood dict(class, dict (word, prob))
+    # (list of list of tweets | List of Classes)
     return (prob_dict(per_class_priors), prob_dict(per_feature_priors),
-            {k: prob_dict(likelihood[k]) for k in likelihood}), (feature_matrix, [y[0] for y in training_list])
+            {k: prob_dict(likelihood[k]) for k in likelihood}), (
+           map(lambda x: ' '.join(x), list(feature_matrix)), target)
 
 
 def prob_dict(input_counter):
+    """ Returns dictionary of element probabilities """
     total = sum(input_counter.values(), 0.0)
     return {k: v / total for k, v in input_counter.iteritems()}
 
 
 def compute_likelihoods(words, feature_likelihood):
+    """ Compute P(Class | Features) for list of Features """
     result = 1
     for word in words:
         if word in feature_likelihood:
@@ -106,6 +110,8 @@ def compute_likelihoods(words, feature_likelihood):
 
 
 def compute_recall_precision(y_true, y_pred, classifier):
+    """ Compute recall or precision. Inputing y_true y_pred yields recall
+     Swapping the two yields precision"""
     count = 0.0
     right = 0.0
     for index, i in enumerate(y_true):
@@ -117,10 +123,12 @@ def compute_recall_precision(y_true, y_pred, classifier):
 
 
 def compute_f1_score(recall, precision):
+    """ Computes F1 score """
     return 2 * precision * recall / (precision + recall)
 
 
 def evaluation(y_true, y_pred):
+    """ Prints out classification report for given true and predicted classifications """
     print "Starting Evaluation"
     for classifier in (CLASS_HRC, CLASS_DJT):
         recall = compute_recall_precision(y_true, y_pred, classifier)
@@ -130,6 +138,7 @@ def evaluation(y_true, y_pred):
 
 
 def predict(tweet_str, classifier_priors, all_feature_priors, feature_probabilities):
+    """ Returns list of likely classes in descending order"""
     # This function will compute the overall accuracy and the per class accuracy of your classifier. We require the
     # following metrics for accuracy computation:
     # print "Beginning Evaluation"
@@ -143,6 +152,7 @@ def predict(tweet_str, classifier_priors, all_feature_priors, feature_probabilit
 
 
 def test_naive_bayes(probability_components):
+    """ Runs testing of NB Classifier on test data"""
     print "Beginning Testing"
     y_true = []
     y_pred = []
@@ -155,16 +165,19 @@ def test_naive_bayes(probability_components):
 
 
 if __name__ == '__main__':
-    # if len(sys.argv) != 2:
-    #     print 'Usage: python classifier.py tweet.csv'
-    #     sys.exit(1)
-    #
-    # tweet_csv = sys.argv[1]
-    tweet_csv = "tweets.csv"
+
+    # comment out the following and uncomment out the last line if the tweet csv is
+    # in this directory or for easy of execution
+    if len(sys.argv) != 2:
+        print 'Usage: python classifier.py tweet.csv'
+        sys.exit(1)
+    tweet_csv = sys.argv[1]
+    # tweet_csv = "tweets.csv"
+
     assert os.path.isfile(tweet_csv)
     # for_predict: dict(class, prob) | dict(word,prob) | dict(class, dict(word, prob)
     # This variable is for the predict function
-    # for_scikit: sparse feature matrix | list[handles]
+    # for_scikit: [[tweet words seperated by spaces]] | list[handles]
     # This variable is for the scikit naive bayes
     for_predict, for_scikit = train(cleanup(read_data(tweet_csv)))
     print "Training Complete"
